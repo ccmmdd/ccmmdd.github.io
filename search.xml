@@ -3,7 +3,11 @@
   <entry>
     <title>博客搭建</title>
     <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h4 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h4><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><pre><code>- 1.node.js 
+- 下载网址 https://nodejs.org/zh-cn/
+- 2.git
+- 下载网址 https://git-scm.com/downloads</code></pre>
+]]></content>
       <categories>
         <category>node</category>
         <category>git</category>
