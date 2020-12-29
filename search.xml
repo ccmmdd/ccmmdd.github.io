@@ -3,23 +3,95 @@
   <entry>
     <title>博客搭建</title>
     <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><pre><code>1.node.js 
+    <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><hr>
+<pre><code>node.js 
 .  下载网址： https://nodejs.org/zh-cn/  
 .  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
 <hr>
-<pre><code>2.git  
+<pre><code>git  
 .  下载网址： https://git-scm.com/downloads
 .  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
 <hr>
-<pre><code>3.安装加速软件源 
+<pre><code>Visual  Studio code
+.  下载网址：https://code.visualstudio.com/
+.  安装教程：https://jingyan.baidu.com/article/fd8044fa0cc1115030137a4b.html</code></pre>
+<hr>
+<pre><code>安装加速软件源 
 .  第一步：win+r 输入 cmd
 .  第二步：输入 npm install -g cnpm --registry=https://registry.npm.taobao.org
 .  第三步：输入 cnpm install -g hexo </code></pre>
 <hr>
-<h3 id="二-初始化博客"><a href="#二-初始化博客" class="headerlink" title="二.初始化博客"></a>二.初始化博客</h3><pre><code>1.新建一个空白文件夹（名字随意，自己认识就好）</code></pre>
+<h3 id="二-初始化博客"><a href="#二-初始化博客" class="headerlink" title="二.初始化博客"></a>二.初始化博客</h3><hr>
+<pre><code>新建一个空白文件夹（名字随意，自己认识就好）</code></pre>
 <hr>
-<pre><code>2.第二部：打开文件夹</code></pre>
-<p><img src="/img/%E6%90%9C%E7%B4%A2%E6%A0%8F.png" alt="搜索栏"><br>             清空并输入cmd，然后回车</p>
+<pre><code>打开文件夹搜索地址栏</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%90%9C%E7%B4%A2%E6%A0%8F.png" alt="搜索栏"></p>
+<hr>
+<pre><code>  在标记位置清空原有内容并输入cmd，然后回车</code></pre>
+<hr>
+<pre><code>输入命令（依次输入）
+    hexo init         # 初始化博客（过程较慢）
+    hexo generate     # 生成博客系统
+    hexo server      # 开启博客本地测试</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cmd.png" alt="cmd"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%9C%AC%E5%9C%B0%E6%88%90%E5%8A%9F%E5%9B%BE%E7%89%87.png" alt="成功图片"></p>
+<hr>
+<pre><code>    运行成功会出上面第一张图的结果，接着打开浏览器输入 http://localhost:4000 查看自己的博客初始页面，到此就完成了本地搭建的过程。</code></pre>
+<hr>
+<h3 id="三-仓库和ssh"><a href="#三-仓库和ssh" class="headerlink" title="三.仓库和ssh"></a>三.仓库和ssh</h3><hr>
+<pre><code> 注册自己的github账号  网址：https://github.com/
+ 不会注册的自己搜索教程吧！</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gitbash.png" alt="gitbash"></p>
+<hr>
+<pre><code> 打开上图的软件（右击桌面）
+ 输入命令(依次输入)
+      git config --global user.email &quot;github注册时使用的邮箱&quot;
+      git config --global user.name &quot;github用的用户名&quot;
+      ssh-keygen -t rsa -C &quot;github注册时使用的邮箱&quot; # 这个命令会有好几个地方等待你输入，直接回车即可</code></pre>
+<hr>
+<pre><code> 打开文件夹，如下图</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%BD%8D%E7%BD%AE.png" alt="位置"></p>
+<hr>
+<pre><code> 打开文件夹中的 id_rsa.pub 文件(用 VScode 打开)
+ 复制文件中的所有内容</code></pre>
+<hr>
+<pre><code> 打开github，并按照下面步骤执行</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github1.png" alt="github1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github2.png" alt="github2">  title随意</p>
+<hr>
+<pre><code> 测试是否成功
+ 输入命令
+      ssh -T git@github.com # 中途输入一次yes</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/git1.png" alt="git1">  出现即为成功</p>
+<hr>
+<pre><code> 打开github，点击左上角小猫回到首页
+ 点击创建仓库（create repository）
+ Repository name 输入格式 github用户名.github.io
+ 点击create repository</code></pre>
+<hr>
+<pre><code> 到此仓库和ssh就完成了</code></pre>
+<h3 id="四-配置文件修改"><a href="#四-配置文件修改" class="headerlink" title="四.配置文件修改"></a>四.配置文件修改</h3><hr>
+<pre><code> 打开你创建的文件夹，找到_config.yml文件，使用vscode或notepad++打开</code></pre>
+<hr>
+<p>修改以下文件中以下部分<br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai1.png" alt="gai1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai2.png" alt="gai2"></p>
+<hr>
+<h3 id="五-上传"><a href="#五-上传" class="headerlink" title="五.上传"></a>五.上传</h3><hr>
+<pre><code> 打开文件夹搜索地址栏，输入cmd
+ 输入命令（依次输入）
+      cnpm install hexo-deployer-git --save   # 安装自动上传到github的工具
+     hexo clean      # 清理缓存
+     hexo generate   # 生成博客网页
+     hexo deploy     # 部署网页到github上面</code></pre>
+<hr>
+<pre><code> 打开浏览器，输入网址 https://github用户名.github.io 即可打开自己博客</code></pre>
+<hr>
+<h3 id="六-美化"><a href="#六-美化" class="headerlink" title="六.美化"></a>六.美化</h3><hr>
+<pre><code> 网站推荐：https://hexo.io/themes/
+ 也可以自己寻找</code></pre>
 <hr>
 ]]></content>
       <categories>
