@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>简介</title>
-    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
-      <categories>
-        <category>介绍</category>
-      </categories>
-      <tags>
-        <tag>自述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>linux</title>
-    <url>/2019/08/20/linux/</url>
-    <content><![CDATA[<h6 id="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"><a href="#因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。" class="headerlink" title="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"></a>因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。</h6>]]></content>
-      <categories>
-        <category>linux</category>
-        <category>命令</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客搭建</title>
     <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><hr>
@@ -123,6 +100,29 @@
       </categories>
       <tags>
         <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>linux</title>
+    <url>/2019/08/20/linux/</url>
+    <content><![CDATA[<h6 id="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"><a href="#因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。" class="headerlink" title="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"></a>因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。</h6>]]></content>
+      <categories>
+        <category>linux</category>
+        <category>命令</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简介</title>
+    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
+      <categories>
+        <category>介绍</category>
+      </categories>
+      <tags>
+        <tag>自述</tag>
       </tags>
   </entry>
 </search>
