@@ -171,14 +171,14 @@ ln -s 原文件 目标文件
       </tags>
   </entry>
   <entry>
-    <title>简介</title>
-    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
+    <title>python入门</title>
+    <url>/2019/12/20/python/</url>
+    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。######"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。######</h6>]]></content>
       <categories>
-        <category>介绍</category>
+        <category>python</category>
       </categories>
       <tags>
-        <tag>自述</tag>
+        <tag>学习资料</tag>
       </tags>
   </entry>
   <entry>
@@ -220,6 +220,17 @@ ln -s 原文件 目标文件
       </categories>
       <tags>
         <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简介</title>
+    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
+      <categories>
+        <category>介绍</category>
+      </categories>
+      <tags>
+        <tag>自述</tag>
       </tags>
   </entry>
 </search>
