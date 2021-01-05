@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>English</title>
+    <url>/2019/09/01/%E8%8B%B1%E8%AF%AD/</url>
+    <content><![CDATA[<h6 id="我只想做个与世无争的垃圾-没想到还要被分类。"><a href="#我只想做个与世无争的垃圾-没想到还要被分类。" class="headerlink" title="我只想做个与世无争的垃圾 没想到还要被分类。"></a>我只想做个与世无争的垃圾 没想到还要被分类。</h6><h3 id="day-one"><a href="#day-one" class="headerlink" title="day one"></a>day one</h3><p>1.classial    adj.经典的，古典的    classic  n.名著&amp;adj.古典的<br> 区别:classic强调经典，比如文学;而classical强调古典，比如音乐。</p>
+<p>2.produce vt.生产;制造;出示&amp;n.农产品  product  n.产品<br> production n.产量;生产     productive adj.多产的; 有效益的    productivity n.生产力</p>
+<p>3.evaluate  vt.评价;评估   evaluation  n.评价；评估</p>
+<p>4.intelligence n.智力;情报    intelligent  adj.聪明的   intellectual  adj.智力的&amp;n.知识分子</p>
+<p>5.condition n.条件;环境&amp;v.训练，使..适应；对..有影响<br> 注：这里的状况指有先决条件影响的前提下，比如许诺，协议，合同等等<br> be in (good) condition 情况良好<br> out of condition 情况不佳<br> on condition that 如果；条件是…</p>
+<p>6.menber n.成员   menbership n.成员资格;全体成员</p>
+<p>7.union n.工会;联合</p>
+<p>8.order n.命令;订单;命令&amp;v.订购;命令<br> in order 状况良好   in order to/that 为了 out of order 状况不佳<br> take order 点菜；接受订单</p>
+<p>9.rank n.排,列;地位；阶层;军衔&amp;v.分等级&amp;adj.繁茂的；恶臭的；极端的</p>
+<p>10.strike v.击打；罢工；侵袭&amp;n.罢工       struck（过去式）<br> strike off 砍掉；除名         strike out 抨击        strike up 建立友谊；开始交往</p>
+<p>11.smartphone n.智能手机</p>
+<p>12.perspective n.透视；远景；观点&amp;adj.透视的</p>
+<p>13.confusion n.混淆     confuse  vt.使困惑</p>
+<p>14.medium n.媒介；方法&amp;adj.中等的</p>
+<p>15.secondary adj.次要的；辅助的</p>
+<p>16.anyway adv.不管怎样；无论如何</p>
+<p>17.dollar n.美元</p>
+<p>18.gold n.金；&amp;adj.金色的    golden adj.金制的</p>
+<p>19.job n.工作</p>
+<p>20.rail n.铁轨；栏杆<br>  railway n.铁路</p>
+<p>21.time n.时间；倍；时期；次&amp;v.计时&amp;adj.定时的；分期的<br>  timetable n.时间表<br>  at all times 随时  behind the time 过时的 once upon a time 从前<br>  on time 准时  in time 及时 all the time 始终<br>  at times 有时 at no time 决不 at one time 曾经一度</p>
+<p>22.tonight n.今晚</p>
+<p>23.unless conj.除非</p>
+<p>24.liability n.责任；义务；负债    liable adj.负有赔付责任的<br>   be liable for 对…有责任<br>   liar n.说谎的人</p>
+<p>25.queue n.队伍&amp;vi.排队<br>  jump the queue 插队  queue up 排队</p>
+<p>26.slope n.斜坡；坡度&amp;v.使倾斜</p>
+<p>27.spirit n.鬼魂；心情；精神；烈酒   spiritual adj.精神上的<br> in high/low spirit 情绪高/低长</p>
+<p>28.alliance n.结盟</p>
+<p>29.attach vt.系；附加；使…有联系  attachment n.附件；依恋</p>
+<p>30.buffet n.自助餐&amp;v.反复敲打</p>
+<h3 id="day-two"><a href="#day-two" class="headerlink" title="day two"></a>day two</h3>]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux命令</title>
     <url>/2019/08/20/linux/</url>
     <content><![CDATA[<h6 id="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"><a href="#因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。" class="headerlink" title="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"></a>因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。</h6><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h3><hr>
@@ -58,11 +99,44 @@ ln -s 原文件 目标文件
 软链接相当于快捷方式
 硬链接相当于复制原文件</code></pre>
 <hr>
+<h3 id="权限管理"><a href="#权限管理" class="headerlink" title="权限管理"></a>权限管理</h3><hr>
+<pre><code>改变文件或目录权限 chmod
+chmod -选项  [(ugoa)+(+-=)+(rwx)] 文件或目录
+            [mode=421] 文件或目录
+-R 递归修改</code></pre>
+<hr>
+<pre><code>改变文件或目录所有者 chown
+chown 用户 文件或目录</code></pre>
+<hr>
+<pre><code>改变文件或目录所属组 chgrp
+chgrp 用户组 文件或目录</code></pre>
+<hr>
+<pre><code>显示文件缺省权限 umask
+umask -S</code></pre>
+<hr>
 <p>​    </p>
 ]]></content>
       <categories>
         <category>linux</category>
         <category>命令</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python入门</title>
+    <url>/2019/12/20/python/</url>
+    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
+<p> 输入代码：<br> print(“hello world!”)</p>
+<p> 保存并打开cmd，输入python 文件名.py</p>
+<hr>
+<p> 2.</p>
+]]></content>
+      <categories>
+        <category>python</category>
       </categories>
       <tags>
         <tag>学习资料</tag>
@@ -171,24 +245,6 @@ ln -s 原文件 目标文件
       </tags>
   </entry>
   <entry>
-    <title>python入门</title>
-    <url>/2019/12/20/python/</url>
-    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
-<p> 输入代码：<br> print(“hello world!”)</p>
-<p> 保存并打开cmd，输入python 文件名.py</p>
-<hr>
-<p> 2.</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>简介</title>
     <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
     <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
@@ -197,47 +253,6 @@ ln -s 原文件 目标文件
       </categories>
       <tags>
         <tag>自述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>English</title>
-    <url>/2019/09/01/%E8%8B%B1%E8%AF%AD/</url>
-    <content><![CDATA[<h6 id="我只想做个与世无争的垃圾-没想到还要被分类。"><a href="#我只想做个与世无争的垃圾-没想到还要被分类。" class="headerlink" title="我只想做个与世无争的垃圾 没想到还要被分类。"></a>我只想做个与世无争的垃圾 没想到还要被分类。</h6><h3 id="day-one"><a href="#day-one" class="headerlink" title="day one"></a>day one</h3><p>1.classial    adj.经典的，古典的    classic  n.名著&amp;adj.古典的<br> 区别:classic强调经典，比如文学;而classical强调古典，比如音乐。</p>
-<p>2.produce vt.生产;制造;出示&amp;n.农产品  product  n.产品<br> production n.产量;生产     productive adj.多产的; 有效益的    productivity n.生产力</p>
-<p>3.evaluate  vt.评价;评估   evaluation  n.评价；评估</p>
-<p>4.intelligence n.智力;情报    intelligent  adj.聪明的   intellectual  adj.智力的&amp;n.知识分子</p>
-<p>5.condition n.条件;环境&amp;v.训练，使..适应；对..有影响<br> 注：这里的状况指有先决条件影响的前提下，比如许诺，协议，合同等等<br> be in (good) condition 情况良好<br> out of condition 情况不佳<br> on condition that 如果；条件是…</p>
-<p>6.menber n.成员   menbership n.成员资格;全体成员</p>
-<p>7.union n.工会;联合</p>
-<p>8.order n.命令;订单;命令&amp;v.订购;命令<br> in order 状况良好   in order to/that 为了 out of order 状况不佳<br> take order 点菜；接受订单</p>
-<p>9.rank n.排,列;地位；阶层;军衔&amp;v.分等级&amp;adj.繁茂的；恶臭的；极端的</p>
-<p>10.strike v.击打；罢工；侵袭&amp;n.罢工       struck（过去式）<br> strike off 砍掉；除名         strike out 抨击        strike up 建立友谊；开始交往</p>
-<p>11.smartphone n.智能手机</p>
-<p>12.perspective n.透视；远景；观点&amp;adj.透视的</p>
-<p>13.confusion n.混淆     confuse  vt.使困惑</p>
-<p>14.medium n.媒介；方法&amp;adj.中等的</p>
-<p>15.secondary adj.次要的；辅助的</p>
-<p>16.anyway adv.不管怎样；无论如何</p>
-<p>17.dollar n.美元</p>
-<p>18.gold n.金；&amp;adj.金色的    golden adj.金制的</p>
-<p>19.job n.工作</p>
-<p>20.rail n.铁轨；栏杆<br>  railway n.铁路</p>
-<p>21.time n.时间；倍；时期；次&amp;v.计时&amp;adj.定时的；分期的<br>  timetable n.时间表<br>  at all times 随时  behind the time 过时的 once upon a time 从前<br>  on time 准时  in time 及时 all the time 始终<br>  at times 有时 at no time 决不 at one time 曾经一度</p>
-<p>22.tonight n.今晚</p>
-<p>23.unless conj.除非</p>
-<p>24.liability n.责任；义务；负债    liable adj.负有赔付责任的<br>   be liable for 对…有责任<br>   liar n.说谎的人</p>
-<p>25.queue n.队伍&amp;vi.排队<br>  jump the queue 插队  queue up 排队</p>
-<p>26.slope n.斜坡；坡度&amp;v.使倾斜</p>
-<p>27.spirit n.鬼魂；心情；精神；烈酒   spiritual adj.精神上的<br> in high/low spirit 情绪高/低长</p>
-<p>28.alliance n.结盟</p>
-<p>29.attach vt.系；附加；使…有联系  attachment n.附件；依恋</p>
-<p>30.buffet n.自助餐&amp;v.反复敲打</p>
-<h3 id="day-two"><a href="#day-two" class="headerlink" title="day two"></a>day two</h3>]]></content>
-      <categories>
-        <category>English</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
       </tags>
   </entry>
 </search>
