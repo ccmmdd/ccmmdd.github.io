@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>python入门</title>
-    <url>/2019/12/20/python/</url>
-    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
-<p> 输入代码：<br> print(“hello world!”)</p>
-<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
-<hr>
-<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。</p>
-<hr>
-<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
-<hr>
-<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
-<hr>
-<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
-<hr>
-<p>6.常量：里面的值不能改变</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux命令</title>
     <url>/2019/08/20/linux/</url>
     <content><![CDATA[<h6 id="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"><a href="#因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。" class="headerlink" title="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"></a>因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。</h6><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h3><hr>
@@ -99,11 +73,71 @@ chgrp 用户组 文件或目录</code></pre>
 <pre><code>显示文件缺省权限 umask
 umask -S</code></pre>
 <hr>
+<h3 id="搜索命令"><a href="#搜索命令" class="headerlink" title="搜索命令"></a>搜索命令</h3><hr>
+<pre><code>文件搜索 find
+find 搜索范围 -选项 匹配条件
+-iname 不区分大小写
+-size (+-)n 查找大小
+-group 在所属组里面找
+-amin 访问时间
+-cmin 文件属性
+-mmin 文件内容</code></pre>
+<hr>
+<pre><code>文件资料库查找文件 locate
+locate 文件名</code></pre>
+<hr>
+<pre><code>搜索命令所在目录或别名 which
+which 命令</code></pre>
+<hr>
+<pre><code>搜索命令所在目录及帮助文档路径 whereis 
+whereis 命令</code></pre>
+<hr>
+<pre><code>在文件中搜索子串匹配的行 grep
+grep -选线 指定字串 文件
+-i 不区分大小写
+-v 排除指定字串</code></pre>
+<hr>
+<h3 id="帮助命令"><a href="#帮助命令" class="headerlink" title="帮助命令"></a>帮助命令</h3><hr>
+<pre><code>获取帮助信息 man
+man 命令或配置文件信息</code></pre>
+<hr>
+<pre><code>获取shell内置命令帮助信息 help
+help 命令
+命令 --help</code></pre>
+<hr>
+<pre><code>info</code></pre>
+<hr>
 <p>​    </p>
 ]]></content>
       <categories>
         <category>linux</category>
         <category>命令</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python入门</title>
+    <url>/2019/12/20/python/</url>
+    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
+<p> 输入代码：<br> print(“hello world!”)</p>
+<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
+<hr>
+<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。</p>
+<hr>
+<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
+<hr>
+<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
+<hr>
+<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
+<hr>
+<p>6.常量：里面的值不能改变</p>
+]]></content>
+      <categories>
+        <category>python</category>
       </categories>
       <tags>
         <tag>学习资料</tag>
@@ -118,77 +152,6 @@ umask -S</code></pre>
       </categories>
       <tags>
         <tag>自述</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>English</title>
-    <url>/2019/09/01/%E8%8B%B1%E8%AF%AD/</url>
-    <content><![CDATA[<h6 id="我只想做个与世无争的垃圾-没想到还要被分类。"><a href="#我只想做个与世无争的垃圾-没想到还要被分类。" class="headerlink" title="我只想做个与世无争的垃圾 没想到还要被分类。"></a>我只想做个与世无争的垃圾 没想到还要被分类。</h6><h3 id="day-one"><a href="#day-one" class="headerlink" title="day one"></a>day one</h3><p>1.classial    adj.经典的，古典的    classic  n.名著&amp;adj.古典的<br> 区别:classic强调经典，比如文学;而classical强调古典，比如音乐。</p>
-<p>2.produce vt.生产;制造;出示&amp;n.农产品  product  n.产品<br> production n.产量;生产     productive adj.多产的; 有效益的    productivity n.生产力</p>
-<p>3.evaluate  vt.评价;评估   evaluation  n.评价；评估</p>
-<p>4.intelligence n.智力;情报    intelligent  adj.聪明的   intellectual  adj.智力的&amp;n.知识分子</p>
-<p>5.condition n.条件;环境&amp;v.训练，使..适应；对..有影响<br> 注：这里的状况指有先决条件影响的前提下，比如许诺，协议，合同等等<br> be in (good) condition 情况良好<br> out of condition 情况不佳<br> on condition that 如果；条件是…</p>
-<p>6.menber n.成员   menbership n.成员资格;全体成员</p>
-<p>7.union n.工会;联合</p>
-<p>8.order n.命令;订单;命令&amp;v.订购;命令<br> in order 状况良好   in order to/that 为了 out of order 状况不佳<br> take order 点菜；接受订单</p>
-<p>9.rank n.排,列;地位；阶层;军衔&amp;v.分等级&amp;adj.繁茂的；恶臭的；极端的</p>
-<p>10.strike v.击打；罢工；侵袭&amp;n.罢工       struck（过去式）<br> strike off 砍掉；除名         strike out 抨击        strike up 建立友谊；开始交往</p>
-<p>11.smartphone n.智能手机</p>
-<p>12.perspective n.透视；远景；观点&amp;adj.透视的</p>
-<p>13.confusion n.混淆     confuse  vt.使困惑</p>
-<p>14.medium n.媒介；方法&amp;adj.中等的</p>
-<p>15.secondary adj.次要的；辅助的</p>
-<p>16.anyway adv.不管怎样；无论如何</p>
-<p>17.dollar n.美元</p>
-<p>18.gold n.金；&amp;adj.金色的    golden adj.金制的</p>
-<p>19.job n.工作</p>
-<p>20.rail n.铁轨；栏杆<br>  railway n.铁路</p>
-<p>21.time n.时间；倍；时期；次&amp;v.计时&amp;adj.定时的；分期的<br>  timetable n.时间表<br>  at all times 随时  behind the time 过时的 once upon a time 从前<br>  on time 准时  in time 及时 all the time 始终<br>  at times 有时 at no time 决不 at one time 曾经一度</p>
-<p>22.tonight n.今晚</p>
-<p>23.unless conj.除非</p>
-<p>24.liability n.责任；义务；负债    liable adj.负有赔付责任的<br>   be liable for 对…有责任<br>   liar n.说谎的人</p>
-<p>25.queue n.队伍&amp;vi.排队<br>  jump the queue 插队  queue up 排队</p>
-<p>26.slope n.斜坡；坡度&amp;v.使倾斜</p>
-<p>27.spirit n.鬼魂；心情；精神；烈酒   spiritual adj.精神上的<br> in high/low spirit 情绪高/低长</p>
-<p>28.alliance n.结盟</p>
-<p>29.attach vt.系；附加；使…有联系  attachment n.附件；依恋</p>
-<p>30.buffet n.自助餐&amp;v.反复敲打</p>
-<h3 id="day-two"><a href="#day-two" class="headerlink" title="day two"></a>day two</h3><p>1.counsel   n.律师&amp;vt.n.劝告 counselor n.法律顾问</p>
-<p>2.ethics  n.伦理    ethnic adj.种族的</p>
-<p>3.distribute  vt.使发布;分发   distribution n.分配   distributive adj.分配的</p>
-<p>4.euro n.欧元</p>
-<p>5.even adv.连;甚至；更&amp;adj.平坦的&amp;v.变平坦  evenly adv.均匀的；平坦的<br> even if/though 即使，虽然</p>
-<p>6.flawless adj.无暇的</p>
-<p>7.guard n.看守;警卫      guardian n.监护人</p>
-<p>8.hero n.英雄;男主角    heroic adj.英雄的   heroine n.女主角   heroism n.英雄气概</p>
-<p>9.honset adj.诚实的 dishonest adj.不诚实的 honesty n.诚实</p>
-<p>10.humor n.幽默   humorous adj.幽默的;滑稽的  humorist n.滑稽者</p>
-<p>11.jet n.喷气式飞机 jet lag n.飞行时差</p>
-<p>12.legislate v.制订法律  legislation n.法律；立法  legislature n.立法机关 legislative adj.立法的 legislator n.立法者</p>
-<p>13.needle n.针</p>
-<p>14.proclaim vt.宣告；表明</p>
-<p>15.progress n.进步&amp;vi.进展   progressive adj.进步的&amp;n.改革论者  progression n.进步的<br> in progress 前进   make progre 取得进步</p>
-<p>16.recreation n.消遣;娱乐（偏向健身）</p>
-<p>17.sick adj.患病的;想吐的  sickness n.疾病 sicken vt.患病;(使)厌倦</p>
-<p>18.substitute  v.替换&amp;n.替换品 substitution n.替换</p>
-<p>19.vote v.投票;选举&amp;n.投票权  voter n.选举人<br>  vote for/against 投票赞成/反对   vote in 任职</p>
-<p>20.wake v.醒  waken vi.醒来&amp;vt.唤醒<br>  wake up 醒来</p>
-<p>21.ignore vt.忽视</p>
-<p>22.install v.安装;就职 installation n.安装;装置</p>
-<p>23.arrange v.整理  arrangement n.安排;布置</p>
-<p>24.sign n.符号&amp;v.签字  signal n.暗号&amp;v.发信号</p>
-<p>25.suspect v.怀疑&amp;n.嫌疑犯&amp;adj.令人怀疑的</p>
-<p>26.edit v.编辑  edition n.版本 editor n.剪辑员</p>
-<p>27.far farther/further farthest/furthest adj&amp;adv.更远的<br>  far from 远离  so…far 就目前而止  so/as far as …远到…，据…就…</p>
-<p>28.lightning n.雷电</p>
-<p>29.daring adj.大胆的&amp;v.敢于（dare 现在分词） dare v.敢</p>
-<p>30.favour n.好感;恩惠;帮助  favourable adj.称赞的;有利的  favourite adj.喜爱的<br>  do sb a favour帮助某人      in favour of 支持      in sb‘s favour 有利某人</p>
-]]></content>
-      <categories>
-        <category>English</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
       </tags>
   </entry>
   <entry>
@@ -291,6 +254,77 @@ umask -S</code></pre>
       </categories>
       <tags>
         <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>English</title>
+    <url>/2019/09/01/%E8%8B%B1%E8%AF%AD/</url>
+    <content><![CDATA[<h6 id="我只想做个与世无争的垃圾-没想到还要被分类。"><a href="#我只想做个与世无争的垃圾-没想到还要被分类。" class="headerlink" title="我只想做个与世无争的垃圾 没想到还要被分类。"></a>我只想做个与世无争的垃圾 没想到还要被分类。</h6><h3 id="day-one"><a href="#day-one" class="headerlink" title="day one"></a>day one</h3><p>1.classial    adj.经典的，古典的    classic  n.名著&amp;adj.古典的<br> 区别:classic强调经典，比如文学;而classical强调古典，比如音乐。</p>
+<p>2.produce vt.生产;制造;出示&amp;n.农产品  product  n.产品<br> production n.产量;生产     productive adj.多产的; 有效益的    productivity n.生产力</p>
+<p>3.evaluate  vt.评价;评估   evaluation  n.评价；评估</p>
+<p>4.intelligence n.智力;情报    intelligent  adj.聪明的   intellectual  adj.智力的&amp;n.知识分子</p>
+<p>5.condition n.条件;环境&amp;v.训练，使..适应；对..有影响<br> 注：这里的状况指有先决条件影响的前提下，比如许诺，协议，合同等等<br> be in (good) condition 情况良好<br> out of condition 情况不佳<br> on condition that 如果；条件是…</p>
+<p>6.menber n.成员   menbership n.成员资格;全体成员</p>
+<p>7.union n.工会;联合</p>
+<p>8.order n.命令;订单;命令&amp;v.订购;命令<br> in order 状况良好   in order to/that 为了 out of order 状况不佳<br> take order 点菜；接受订单</p>
+<p>9.rank n.排,列;地位；阶层;军衔&amp;v.分等级&amp;adj.繁茂的；恶臭的；极端的</p>
+<p>10.strike v.击打；罢工；侵袭&amp;n.罢工       struck（过去式）<br> strike off 砍掉；除名         strike out 抨击        strike up 建立友谊；开始交往</p>
+<p>11.smartphone n.智能手机</p>
+<p>12.perspective n.透视；远景；观点&amp;adj.透视的</p>
+<p>13.confusion n.混淆     confuse  vt.使困惑</p>
+<p>14.medium n.媒介；方法&amp;adj.中等的</p>
+<p>15.secondary adj.次要的；辅助的</p>
+<p>16.anyway adv.不管怎样；无论如何</p>
+<p>17.dollar n.美元</p>
+<p>18.gold n.金；&amp;adj.金色的    golden adj.金制的</p>
+<p>19.job n.工作</p>
+<p>20.rail n.铁轨；栏杆<br>  railway n.铁路</p>
+<p>21.time n.时间；倍；时期；次&amp;v.计时&amp;adj.定时的；分期的<br>  timetable n.时间表<br>  at all times 随时  behind the time 过时的 once upon a time 从前<br>  on time 准时  in time 及时 all the time 始终<br>  at times 有时 at no time 决不 at one time 曾经一度</p>
+<p>22.tonight n.今晚</p>
+<p>23.unless conj.除非</p>
+<p>24.liability n.责任；义务；负债    liable adj.负有赔付责任的<br>   be liable for 对…有责任<br>   liar n.说谎的人</p>
+<p>25.queue n.队伍&amp;vi.排队<br>  jump the queue 插队  queue up 排队</p>
+<p>26.slope n.斜坡；坡度&amp;v.使倾斜</p>
+<p>27.spirit n.鬼魂；心情；精神；烈酒   spiritual adj.精神上的<br> in high/low spirit 情绪高/低长</p>
+<p>28.alliance n.结盟</p>
+<p>29.attach vt.系；附加；使…有联系  attachment n.附件；依恋</p>
+<p>30.buffet n.自助餐&amp;v.反复敲打</p>
+<h3 id="day-two"><a href="#day-two" class="headerlink" title="day two"></a>day two</h3><p>1.counsel   n.律师&amp;vt.n.劝告 counselor n.法律顾问</p>
+<p>2.ethics  n.伦理    ethnic adj.种族的</p>
+<p>3.distribute  vt.使发布;分发   distribution n.分配   distributive adj.分配的</p>
+<p>4.euro n.欧元</p>
+<p>5.even adv.连;甚至；更&amp;adj.平坦的&amp;v.变平坦  evenly adv.均匀的；平坦的<br> even if/though 即使，虽然</p>
+<p>6.flawless adj.无暇的</p>
+<p>7.guard n.看守;警卫      guardian n.监护人</p>
+<p>8.hero n.英雄;男主角    heroic adj.英雄的   heroine n.女主角   heroism n.英雄气概</p>
+<p>9.honset adj.诚实的 dishonest adj.不诚实的 honesty n.诚实</p>
+<p>10.humor n.幽默   humorous adj.幽默的;滑稽的  humorist n.滑稽者</p>
+<p>11.jet n.喷气式飞机 jet lag n.飞行时差</p>
+<p>12.legislate v.制订法律  legislation n.法律；立法  legislature n.立法机关 legislative adj.立法的 legislator n.立法者</p>
+<p>13.needle n.针</p>
+<p>14.proclaim vt.宣告；表明</p>
+<p>15.progress n.进步&amp;vi.进展   progressive adj.进步的&amp;n.改革论者  progression n.进步的<br> in progress 前进   make progre 取得进步</p>
+<p>16.recreation n.消遣;娱乐（偏向健身）</p>
+<p>17.sick adj.患病的;想吐的  sickness n.疾病 sicken vt.患病;(使)厌倦</p>
+<p>18.substitute  v.替换&amp;n.替换品 substitution n.替换</p>
+<p>19.vote v.投票;选举&amp;n.投票权  voter n.选举人<br>  vote for/against 投票赞成/反对   vote in 任职</p>
+<p>20.wake v.醒  waken vi.醒来&amp;vt.唤醒<br>  wake up 醒来</p>
+<p>21.ignore vt.忽视</p>
+<p>22.install v.安装;就职 installation n.安装;装置</p>
+<p>23.arrange v.整理  arrangement n.安排;布置</p>
+<p>24.sign n.符号&amp;v.签字  signal n.暗号&amp;v.发信号</p>
+<p>25.suspect v.怀疑&amp;n.嫌疑犯&amp;adj.令人怀疑的</p>
+<p>26.edit v.编辑  edition n.版本 editor n.剪辑员</p>
+<p>27.far farther/further farthest/furthest adj&amp;adv.更远的<br>  far from 远离  so…far 就目前而止  so/as far as …远到…，据…就…</p>
+<p>28.lightning n.雷电</p>
+<p>29.daring adj.大胆的&amp;v.敢于（dare 现在分词） dare v.敢</p>
+<p>30.favour n.好感;恩惠;帮助  favourable adj.称赞的;有利的  favourite adj.喜爱的<br>  do sb a favour帮助某人      in favour of 支持      in sb‘s favour 有利某人</p>
+]]></content>
+      <categories>
+        <category>English</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
       </tags>
   </entry>
 </search>
