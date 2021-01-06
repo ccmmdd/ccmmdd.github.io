@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>python入门</title>
+    <url>/2019/12/20/python/</url>
+    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
+<p> 输入代码：<br> print(“hello world!”)</p>
+<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
+<hr>
+<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。</p>
+<hr>
+<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
+<hr>
+<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
+<hr>
+<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
+<hr>
+<p>6.常量：里面的值不能改变</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>linux命令</title>
     <url>/2019/08/20/linux/</url>
     <content><![CDATA[<h6 id="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"><a href="#因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。" class="headerlink" title="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"></a>因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。</h6><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h3><hr>
@@ -118,43 +144,6 @@ help 命令
       </tags>
   </entry>
   <entry>
-    <title>python入门</title>
-    <url>/2019/12/20/python/</url>
-    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
-<p> 输入代码：<br> print(“hello world!”)</p>
-<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
-<hr>
-<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。</p>
-<hr>
-<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
-<hr>
-<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
-<hr>
-<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
-<hr>
-<p>6.常量：里面的值不能改变</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>简介</title>
-    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
-      <categories>
-        <category>介绍</category>
-      </categories>
-      <tags>
-        <tag>自述</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客搭建</title>
     <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><hr>
@@ -257,6 +246,17 @@ help 命令
       </tags>
   </entry>
   <entry>
+    <title>简介</title>
+    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
+      <categories>
+        <category>介绍</category>
+      </categories>
+      <tags>
+        <tag>自述</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>English</title>
     <url>/2019/09/01/%E8%8B%B1%E8%AF%AD/</url>
     <content><![CDATA[<h6 id="我只想做个与世无争的垃圾-没想到还要被分类。"><a href="#我只想做个与世无争的垃圾-没想到还要被分类。" class="headerlink" title="我只想做个与世无争的垃圾 没想到还要被分类。"></a>我只想做个与世无争的垃圾 没想到还要被分类。</h6><h3 id="day-one"><a href="#day-one" class="headerlink" title="day one"></a>day one</h3><p>1.classial    adj.经典的，古典的    classic  n.名著&amp;adj.古典的<br> 区别:classic强调经典，比如文学;而classical强调古典，比如音乐。</p>
@@ -319,6 +319,35 @@ help 命令
 <p>28.lightning n.雷电</p>
 <p>29.daring adj.大胆的&amp;v.敢于（dare 现在分词） dare v.敢</p>
 <p>30.favour n.好感;恩惠;帮助  favourable adj.称赞的;有利的  favourite adj.喜爱的<br>  do sb a favour帮助某人      in favour of 支持      in sb‘s favour 有利某人</p>
+<h3 id="day-three"><a href="#day-three" class="headerlink" title="day three"></a>day three</h3><p>1.idiom n.成语</p>
+<p>2.penetration n.渗透;洞察<br> pemetration through </p>
+<p>3.telescope n.望远镜</p>
+<p>4.toilet n.厕所;卫生间（比wc精致）</p>
+<p>5.majority n.大部分<br> 强调整体是为单数，强调部分是复数</p>
+<p>6.significant adj.有意义的    significance n.意义</p>
+<p>7.criticism n.批评  criticise vt.批判</p>
+<p>8.environmental adj.环境的  environment n.环境的</p>
+<p>9.contemporary adj.现代的&amp;n.现代人</p>
+<p>10.cultural adj.文化的 culture n.文化</p>
+<p>11.digital adj.数码的</p>
+<p>12.habital n.栖息地 habitant n.居民</p>
+<p>13.help n.帮忙&amp;v.帮助  helpful adj.有帮助的 helpless adj.无助的;抑制不住<br>   can‘t help but do 不得不 can‘t help doning 禁不住做<br>   help oneself do 自便   </p>
+<p>14.hundred mum.百</p>
+<p>15.north n.北&amp;adv.在北方&amp;adj.北的  northern adj.北部的<br>  northwest 西北 northeast 东北</p>
+<p>16.which pron.哪个&amp;adv.哪一个  whichever pron.无论哪个&amp;adj.哪个</p>
+<p>17.scheme  n.计划&amp;v.密谋</p>
+<p>18.wheat n.小麦</p>
+<p>19.arrow n.箭头;箭</p>
+<p>20.bark vi.犬叫&amp;n.狗叫声;树皮</p>
+<p>21.commercial adj.商业的  commercialise vt.使商业化</p>
+<p>22.cultivate vt.栽种;耕作 cultivation n.栽培;种植</p>
+<p>23.digit n.数位;手指;脚趾;0到9任一数字</p>
+<p>24.pack n.包;野兽一群&amp;v.打包 packet n.小袋子 package n.一包&amp;v.包装</p>
+<p>25.paradoxical adj.矛盾的;似是而非的 paradox n.悖论</p>
+<p>26.prepare v.准备 preparation n.准备 preparatory adj.筹备的<br>  preparation for 为…做准备</p>
+<p>27.proficiency n.熟练;精通</p>
+<p>28.suppose vt.猜想;假如  suppsdition n.假设;推想<br>  be suppose to do sth </p>
+<p>29.hurt v.伤害&amp;n.创伤&amp;adj.感到伤害的</p>
 ]]></content>
       <categories>
         <category>English</category>
