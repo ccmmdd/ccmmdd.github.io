@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>python入门</title>
-    <url>/2019/12/20/python/</url>
-    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
-<p> 输入代码：<br> print(“hello world!”)</p>
-<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
-<hr>
-<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。</p>
-<hr>
-<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
-<hr>
-<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
-<hr>
-<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
-<hr>
-<p>6.常量：里面的值不能改变</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux命令</title>
     <url>/2019/08/20/linux/</url>
     <content><![CDATA[<h6 id="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"><a href="#因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。" class="headerlink" title="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"></a>因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。</h6><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h3><hr>
@@ -138,6 +112,41 @@ help 命令
       <categories>
         <category>linux</category>
         <category>命令</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python入门</title>
+    <url>/2019/12/20/python/</url>
+    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
+<p> 输入代码：<br> print(“hello world!”)</p>
+<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
+<hr>
+<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。<br> 不能使用关键字<br> 见名知意</p>
+<hr>
+<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
+<hr>
+<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
+<hr>
+<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
+<hr>
+<p>6.常量：里面的值不能改变</p>
+<hr>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p> 查看数据类型 type(变量名)<br> 六个标准的数据类型<br> 不可变(Number（数字）String（字符串）List（列表）)<br> 可变(Tuple（元组）Set（集合）Dictionary（字典）)</p>
+<hr>
+<p>1.Number（数字）<br> 整型(Int) 是正或负整数，不带小数点。</p>
+<p> 浮点型(float) :浮点型由整数部分与小数部分组成，也可以使用科学计数法表示</p>
+<p> 复数 (complex) :复数由实数部分和虚数部分构成，可以用a + bj,或者complex(a,b)表示， 复   数的实部a和虚部b都是浮点型。</p>
+<p> 布尔(bool):True 和 False</p>
+<p> <strong>数字类型转换</strong><br> int( )  转换一个整数<br> float( ) 转换一个浮点数<br> complex(  ,  )  转换到一个复数</p>
+<p>2.</p>
+]]></content>
+      <categories>
+        <category>python</category>
       </categories>
       <tags>
         <tag>学习资料</tag>
