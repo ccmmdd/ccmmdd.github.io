@@ -88,14 +88,22 @@
 <p> <strong>数字类型转换</strong><br> int( )  转换一个整数<br> float( ) 转换一个浮点数<br> complex(  ,  )  转换到一个复数</p>
 <p>2.String（字符串）<br> 使用引号( ‘ 或 “ )来创建字符串</p>
 <p><strong>转义字符</strong><br> 用反斜杠 \ 转义字符，字符串前加r后面的转义都不会生效。<br> (在行尾时)    续行符<br> \a                         响铃<br> \000                 空<br> \n                         换行<br> \r                        回车<br> \v                         纵向制表符<br> \t                          横向制表符（一个table）</p>
-<p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %f     格式化浮点数字，可指定小数点后的精度</p>
+<p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %.xf      格式化浮点数字，可指定小数点后的精度,x为指定数字</p>
 <p><strong>三引号</strong><br>三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。</p>
 <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.print函数   print() 方法用于打印输出</p>
 <p>seq–用来间隔多个对象 </p>
 <pre><code> print(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,sep=&quot;.&quot;) 
-  &lt;&lt;&lt;a.b.c</code></pre>
+ &lt;&lt;&lt;a.b.c</code></pre>
 <p>end–末尾加转义字符</p>
-<p>2.</p>
+<p>format–占位符</p>
+<pre><code>age = 2
+message = &quot;我的年龄是&#123;&#125;&quot;.format(age)
+print(message)</code></pre>
+<p>2.input函数 input() 函数接受一个标准输入数据，<u>返回为 string 类型</u></p>
+<pre><code>&gt;&gt;&gt;a = input(&quot;请输入:&quot;)
+请输入:123                
+&gt;&gt;&gt; type(a)
+&lt;class &#39;str&#39;&gt;         </code></pre>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">

@@ -1,108 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客搭建</title>
-    <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><hr>
-<pre><code>node.js 
-.  下载网址： https://nodejs.org/zh-cn/  
-.  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
-<hr>
-<pre><code>git  
-.  下载网址： https://git-scm.com/downloads
-.  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
-<hr>
-<pre><code>Visual  Studio code
-.  下载网址：https://code.visualstudio.com/
-.  安装教程：https://jingyan.baidu.com/article/fd8044fa0cc1115030137a4b.html</code></pre>
-<hr>
-<pre><code>安装加速软件源 
-.  第一步：win+r 输入 cmd
-.  第二步：输入 npm install -g cnpm --registry=https://registry.npm.taobao.org
-.  第三步：输入 cnpm install -g hexo </code></pre>
-<hr>
-<h3 id="二-初始化博客"><a href="#二-初始化博客" class="headerlink" title="二.初始化博客"></a>二.初始化博客</h3><hr>
-<pre><code>新建一个空白文件夹（名字随意，自己认识就好）</code></pre>
-<hr>
-<pre><code>打开文件夹搜索地址栏</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%90%9C%E7%B4%A2%E6%A0%8F.png" alt="搜索栏"></p>
-<hr>
-<pre><code>  在标记位置清空原有内容并输入cmd，然后回车</code></pre>
-<hr>
-<pre><code>输入命令（依次输入）
-    hexo init         # 初始化博客（过程较慢）
-    hexo generate     # 生成博客系统
-    hexo server      # 开启博客本地测试</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cmd.png" alt="cmd"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%9C%AC%E5%9C%B0%E6%88%90%E5%8A%9F%E5%9B%BE%E7%89%87.png" alt="成功图片"></p>
-<hr>
-<pre><code>    运行成功会出上面第一张图的结果，接着打开浏览器输入 http://localhost:4000 查看自己的博客初始页面，到此就完成了本地搭建的过程。</code></pre>
-<hr>
-<h3 id="三-仓库和ssh"><a href="#三-仓库和ssh" class="headerlink" title="三.仓库和ssh"></a>三.仓库和ssh</h3><hr>
-<pre><code> 注册自己的github账号  网址：https://github.com/
- 不会注册的自己搜索教程吧！</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gitbash.png" alt="gitbash"></p>
-<hr>
-<pre><code> 打开上图的软件（右击桌面）
- 输入命令(依次输入)
-      git config --global user.email &quot;github注册时使用的邮箱&quot;
-      git config --global user.name &quot;github用的用户名&quot;
-      ssh-keygen -t rsa -C &quot;github注册时使用的邮箱&quot; # 这个命令会有好几个地方等待你输入，直接回车即可</code></pre>
-<hr>
-<pre><code> 打开文件夹，如下图</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%BD%8D%E7%BD%AE.png" alt="位置"></p>
-<hr>
-<pre><code> 打开文件夹中的 id_rsa.pub 文件(用 VScode 打开)
- 复制文件中的所有内容</code></pre>
-<hr>
-<pre><code> 打开github，并按照下面步骤执行</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github1.png" alt="github1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github2.png" alt="github2">  title随意</p>
-<hr>
-<pre><code> 测试是否成功
- 输入命令
-      ssh -T git@github.com # 中途输入一次yes</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/git1.png" alt="git1">  出现即为成功</p>
-<hr>
-<pre><code> 打开github，点击左上角小猫回到首页
- 点击创建仓库（create repository）
- Repository name 输入格式 github用户名.github.io
- 点击create repository</code></pre>
-<hr>
-<pre><code> 到此仓库和ssh就完成了</code></pre>
-<h3 id="四-配置文件修改"><a href="#四-配置文件修改" class="headerlink" title="四.配置文件修改"></a>四.配置文件修改</h3><hr>
-<pre><code> 打开你创建的文件夹，找到_config.yml文件，使用vscode或notepad++打开</code></pre>
-<hr>
-<p>修改文件中以下部分<br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai1.png" alt="gai1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai2.png" alt="gai2"></p>
-<hr>
-<h3 id="五-上传"><a href="#五-上传" class="headerlink" title="五.上传"></a>五.上传</h3><hr>
-<pre><code> 打开文件夹搜索地址栏，输入cmd
- 输入命令（依次输入）
-      cnpm install hexo-deployer-git --save   # 安装自动上传到github的工具
-     hexo clean      # 清理缓存
-     hexo generate   # 生成博客网页
-     hexo deploy     # 部署网页到github上面</code></pre>
-<hr>
-<pre><code> 打开浏览器，输入网址 https://github用户名.github.io 即可打开自己博客</code></pre>
-<hr>
-<h3 id="六-美化"><a href="#六-美化" class="headerlink" title="六.美化"></a>六.美化</h3><hr>
-<pre><code> 网站推荐：https://hexo.io/themes/
- 也可以自己寻找</code></pre>
-<hr>
-]]></content>
-      <categories>
-        <category>node</category>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux命令</title>
     <url>/2019/08/20/linux/</url>
     <content><![CDATA[<h6 id="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"><a href="#因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。" class="headerlink" title="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"></a>因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。</h6><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h3><hr>
@@ -290,6 +188,46 @@ netstat -选项
 <hr>
 <pre><code>init 6</code></pre>
 <hr>
+<h2 id="文本编辑器vi-vim"><a href="#文本编辑器vi-vim" class="headerlink" title="文本编辑器vi/vim"></a>文本编辑器vi/vim</h2><hr>
+<h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><hr>
+<pre><code>命令模式           输入vi进入                  输入wq退去
+插入模式           命令模式 输入i            esc退回 命令模式
+编辑模式           命令模式输入：          回车退回命令模式 </code></pre>
+<hr>
+<h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5><h3 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h3><hr>
+<pre><code>H                 光标移动到这个屏幕的最上方那一行的第一个字符
+L                 光标移动到这个屏幕的最下方那一行的第一个字符
+G                 移动到这个档案的最后一行
+gg               移动到这个档案的第一行
+n&lt;Enter&gt;         n 为数字。光标向下移动 n 行
+[Ctrl] + [f]     屏幕『向下』移动一页，相当于 [Page Down]按键 
+[Ctrl] + [b]     屏幕『向上』移动一页，相当于 [Page Up] 按键 </code></pre>
+<hr>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><hr>
+<pre><code>/word     向光标之下寻找一个名称为 word 的字符串</code></pre>
+<hr>
+<h3 id="复制删除粘贴"><a href="#复制删除粘贴" class="headerlink" title="复制删除粘贴"></a>复制删除粘贴</h3><hr>
+<pre><code>x, X          在一行字当中，x 为向后删除一个字符  X 为向前删除一个字符
+ndd           n为数字。删除光标所在的向下 n 行
+nyy              n为数字。复制光标所在的向下 n 行
+u               复原前一个动作。(常用)
+[Ctrl]+r      重做上一个动作。(常用)
+.             复原一次</code></pre>
+<hr>
+<h5 id="命令模式切换到编辑模式"><a href="#命令模式切换到编辑模式" class="headerlink" title="命令模式切换到编辑模式"></a>命令模式切换到编辑模式</h5><pre><code>i   从目前光标所在处输入
+a   从目前光标所在的下一个字符处开始输入
+o   为在目前光标所在的下一行处输入新的一行
+O   为在目前光标所在的上一行处输入新的一行
+r   只会取代光标所在的那一个字符一次
+R   会一直取代光标所在的文字，直到按下 ESC 为止
+Esc    退出编辑模式，回到命令模式中</code></pre>
+<hr>
+<h5 id="命令模式切换到指令行模式"><a href="#命令模式切换到指令行模式" class="headerlink" title="命令模式切换到指令行模式"></a>命令模式切换到指令行模式</h5><pre><code>:w    将编辑的数据写入硬盘档案中
+:q    离开 vi
+
+vim特有
+:set nu        显示行号
+:set nonu    取消行号</code></pre>
 ]]></content>
       <categories>
         <category>linux</category>
@@ -297,17 +235,6 @@ netstat -选项
       </categories>
       <tags>
         <tag>学习资料</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>简介</title>
-    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
-      <categories>
-        <category>介绍</category>
-      </categories>
-      <tags>
-        <tag>自述</tag>
       </tags>
   </entry>
   <entry>
@@ -338,20 +265,141 @@ netstat -选项
 <p> <strong>数字类型转换</strong><br> int( )  转换一个整数<br> float( ) 转换一个浮点数<br> complex(  ,  )  转换到一个复数</p>
 <p>2.String（字符串）<br> 使用引号( ‘ 或 “ )来创建字符串</p>
 <p><strong>转义字符</strong><br> 用反斜杠 \ 转义字符，字符串前加r后面的转义都不会生效。<br> (在行尾时)    续行符<br> \a                         响铃<br> \000                 空<br> \n                         换行<br> \r                        回车<br> \v                         纵向制表符<br> \t                          横向制表符（一个table）</p>
-<p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %f     格式化浮点数字，可指定小数点后的精度</p>
+<p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %.xf      格式化浮点数字，可指定小数点后的精度,x为指定数字</p>
 <p><strong>三引号</strong><br>三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。</p>
 <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.print函数   print() 方法用于打印输出</p>
 <p>seq–用来间隔多个对象 </p>
 <pre><code> print(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,sep=&quot;.&quot;) 
-  &lt;&lt;&lt;a.b.c</code></pre>
+ &lt;&lt;&lt;a.b.c</code></pre>
 <p>end–末尾加转义字符</p>
-<p>2.</p>
+<p>format–占位符</p>
+<pre><code>age = 2
+message = &quot;我的年龄是&#123;&#125;&quot;.format(age)
+print(message)</code></pre>
+<p>2.input函数 input() 函数接受一个标准输入数据，<u>返回为 string 类型</u></p>
+<pre><code>&gt;&gt;&gt;a = input(&quot;请输入:&quot;)
+请输入:123                
+&gt;&gt;&gt; type(a)
+&lt;class &#39;str&#39;&gt;         </code></pre>
 ]]></content>
       <categories>
         <category>python</category>
       </categories>
       <tags>
         <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建</title>
+    <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><hr>
+<pre><code>node.js 
+.  下载网址： https://nodejs.org/zh-cn/  
+.  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
+<hr>
+<pre><code>git  
+.  下载网址： https://git-scm.com/downloads
+.  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
+<hr>
+<pre><code>Visual  Studio code
+.  下载网址：https://code.visualstudio.com/
+.  安装教程：https://jingyan.baidu.com/article/fd8044fa0cc1115030137a4b.html</code></pre>
+<hr>
+<pre><code>安装加速软件源 
+.  第一步：win+r 输入 cmd
+.  第二步：输入 npm install -g cnpm --registry=https://registry.npm.taobao.org
+.  第三步：输入 cnpm install -g hexo </code></pre>
+<hr>
+<h3 id="二-初始化博客"><a href="#二-初始化博客" class="headerlink" title="二.初始化博客"></a>二.初始化博客</h3><hr>
+<pre><code>新建一个空白文件夹（名字随意，自己认识就好）</code></pre>
+<hr>
+<pre><code>打开文件夹搜索地址栏</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%90%9C%E7%B4%A2%E6%A0%8F.png" alt="搜索栏"></p>
+<hr>
+<pre><code>  在标记位置清空原有内容并输入cmd，然后回车</code></pre>
+<hr>
+<pre><code>输入命令（依次输入）
+    hexo init         # 初始化博客（过程较慢）
+    hexo generate     # 生成博客系统
+    hexo server      # 开启博客本地测试</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cmd.png" alt="cmd"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%9C%AC%E5%9C%B0%E6%88%90%E5%8A%9F%E5%9B%BE%E7%89%87.png" alt="成功图片"></p>
+<hr>
+<pre><code>    运行成功会出上面第一张图的结果，接着打开浏览器输入 http://localhost:4000 查看自己的博客初始页面，到此就完成了本地搭建的过程。</code></pre>
+<hr>
+<h3 id="三-仓库和ssh"><a href="#三-仓库和ssh" class="headerlink" title="三.仓库和ssh"></a>三.仓库和ssh</h3><hr>
+<pre><code> 注册自己的github账号  网址：https://github.com/
+ 不会注册的自己搜索教程吧！</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gitbash.png" alt="gitbash"></p>
+<hr>
+<pre><code> 打开上图的软件（右击桌面）
+ 输入命令(依次输入)
+      git config --global user.email &quot;github注册时使用的邮箱&quot;
+      git config --global user.name &quot;github用的用户名&quot;
+      ssh-keygen -t rsa -C &quot;github注册时使用的邮箱&quot; # 这个命令会有好几个地方等待你输入，直接回车即可</code></pre>
+<hr>
+<pre><code> 打开文件夹，如下图</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%BD%8D%E7%BD%AE.png" alt="位置"></p>
+<hr>
+<pre><code> 打开文件夹中的 id_rsa.pub 文件(用 VScode 打开)
+ 复制文件中的所有内容</code></pre>
+<hr>
+<pre><code> 打开github，并按照下面步骤执行</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github1.png" alt="github1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github2.png" alt="github2">  title随意</p>
+<hr>
+<pre><code> 测试是否成功
+ 输入命令
+      ssh -T git@github.com # 中途输入一次yes</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/git1.png" alt="git1">  出现即为成功</p>
+<hr>
+<pre><code> 打开github，点击左上角小猫回到首页
+ 点击创建仓库（create repository）
+ Repository name 输入格式 github用户名.github.io
+ 点击create repository</code></pre>
+<hr>
+<pre><code> 到此仓库和ssh就完成了</code></pre>
+<h3 id="四-配置文件修改"><a href="#四-配置文件修改" class="headerlink" title="四.配置文件修改"></a>四.配置文件修改</h3><hr>
+<pre><code> 打开你创建的文件夹，找到_config.yml文件，使用vscode或notepad++打开</code></pre>
+<hr>
+<p>修改文件中以下部分<br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai1.png" alt="gai1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai2.png" alt="gai2"></p>
+<hr>
+<h3 id="五-上传"><a href="#五-上传" class="headerlink" title="五.上传"></a>五.上传</h3><hr>
+<pre><code> 打开文件夹搜索地址栏，输入cmd
+ 输入命令（依次输入）
+      cnpm install hexo-deployer-git --save   # 安装自动上传到github的工具
+     hexo clean      # 清理缓存
+     hexo generate   # 生成博客网页
+     hexo deploy     # 部署网页到github上面</code></pre>
+<hr>
+<pre><code> 打开浏览器，输入网址 https://github用户名.github.io 即可打开自己博客</code></pre>
+<hr>
+<h3 id="六-美化"><a href="#六-美化" class="headerlink" title="六.美化"></a>六.美化</h3><hr>
+<pre><code> 网站推荐：https://hexo.io/themes/
+ 也可以自己寻找</code></pre>
+<hr>
+]]></content>
+      <categories>
+        <category>node</category>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简介</title>
+    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
+      <categories>
+        <category>介绍</category>
+      </categories>
+      <tags>
+        <tag>自述</tag>
       </tags>
   </entry>
   <entry>

@@ -250,6 +250,46 @@ netstat -选项
 <hr>
 <pre><code>init 6</code></pre>
 <hr>
+<h2 id="文本编辑器vi-vim"><a href="#文本编辑器vi-vim" class="headerlink" title="文本编辑器vi/vim"></a>文本编辑器vi/vim</h2><hr>
+<h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><hr>
+<pre><code>命令模式           输入vi进入                  输入wq退去
+插入模式           命令模式 输入i            esc退回 命令模式
+编辑模式           命令模式输入：          回车退回命令模式 </code></pre>
+<hr>
+<h5 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h5><h3 id="移动光标"><a href="#移动光标" class="headerlink" title="移动光标"></a>移动光标</h3><hr>
+<pre><code>H                 光标移动到这个屏幕的最上方那一行的第一个字符
+L                 光标移动到这个屏幕的最下方那一行的第一个字符
+G                 移动到这个档案的最后一行
+gg               移动到这个档案的第一行
+n&lt;Enter&gt;         n 为数字。光标向下移动 n 行
+[Ctrl] + [f]     屏幕『向下』移动一页，相当于 [Page Down]按键 
+[Ctrl] + [b]     屏幕『向上』移动一页，相当于 [Page Up] 按键 </code></pre>
+<hr>
+<h3 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h3><hr>
+<pre><code>/word     向光标之下寻找一个名称为 word 的字符串</code></pre>
+<hr>
+<h3 id="复制删除粘贴"><a href="#复制删除粘贴" class="headerlink" title="复制删除粘贴"></a>复制删除粘贴</h3><hr>
+<pre><code>x, X          在一行字当中，x 为向后删除一个字符  X 为向前删除一个字符
+ndd           n为数字。删除光标所在的向下 n 行
+nyy              n为数字。复制光标所在的向下 n 行
+u               复原前一个动作。(常用)
+[Ctrl]+r      重做上一个动作。(常用)
+.             复原一次</code></pre>
+<hr>
+<h5 id="命令模式切换到编辑模式"><a href="#命令模式切换到编辑模式" class="headerlink" title="命令模式切换到编辑模式"></a>命令模式切换到编辑模式</h5><pre><code>i   从目前光标所在处输入
+a   从目前光标所在的下一个字符处开始输入
+o   为在目前光标所在的下一行处输入新的一行
+O   为在目前光标所在的上一行处输入新的一行
+r   只会取代光标所在的那一个字符一次
+R   会一直取代光标所在的文字，直到按下 ESC 为止
+Esc    退出编辑模式，回到命令模式中</code></pre>
+<hr>
+<h5 id="命令模式切换到指令行模式"><a href="#命令模式切换到指令行模式" class="headerlink" title="命令模式切换到指令行模式"></a>命令模式切换到指令行模式</h5><pre><code>:w    将编辑的数据写入硬盘档案中
+:q    离开 vi
+
+vim特有
+:set nu        显示行号
+:set nonu    取消行号</code></pre>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
