@@ -90,7 +90,42 @@
 <p><strong>转义字符</strong><br> 用反斜杠 \ 转义字符，字符串前加r后面的转义都不会生效。<br> (在行尾时)    续行符<br> \a                         响铃<br> \000                 空<br> \n                         换行<br> \r                        回车<br> \v                         纵向制表符<br> \t                          横向制表符（一个table）</p>
 <p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %.xf      格式化浮点数字，可指定小数点后的精度,x为指定数字</p>
 <p><strong>三引号</strong><br>三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。</p>
-<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.print函数   print() 方法用于打印输出</p>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>1.算术运算符</p>
+<pre><code>+    两个对象相加    
+-    两个对象相减
+*    两个数相乘      是返回一个被重复若干次的字符串
+/    两个对象相除
+%    返回除法的余数
+**    幂
+//    向下取接近商的整数    </code></pre>
+<p>2.比较运算符</p>
+<pre><code>==    比较对象是否相等
+!=    比较两个对象是否不相等
+&gt;    返回x是否大于y
+&lt;    返回x是否小于y
+&gt;=    返回x是否大于等于y
+&lt;=    返回x是否小于等于y    </code></pre>
+<p>3.赋值运算符</p>
+<pre><code> =    等于
+ +=    加法    c += a  等效于 c = c + a
+ -=    减法    c -= a  等效于 c = c - a
+ *=    乘法    c *= a  等效于 c = c * a
+ /=    除法    c /= a  等效于 c = c / a
+ %=    取模    c %= a  等效于 c = c % a
+ **=    幂     c **= a 等效于 c = c ** a
+ //=    整除    c //= a 等效于 c = c // a</code></pre>
+<p>4.位运算符</p>
+<pre><code>&amp;    与       参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0
+|    或       只要对应的二个二进位有一个为1时，结果位就为1
+^    异或      当两对应的二进位相异时，结果为1    
+~    取反对数据的每个二进制位取反,即把1变为0,把0变为1
+&lt;&lt;    左移动     运算数的各二进位全部左移若干位 高位丢弃，低位补0。
+&gt;&gt;    右移动     运算数的各二进位全部右移若干位</code></pre>
+<p>5.逻辑运算符</p>
+<pre><code>and    布尔&quot;与&quot; 当a和b两个表达式都为真时,结果才为真,否则为假
+or    布尔&quot;或&quot; 当a和b两个表达式都为假时,结果才是假,否则为真
+not 布尔&quot;非&quot; 真变假,假变真</code></pre>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.print函数   print() 方法用于打印输出</p>
 <p>seq–用来间隔多个对象 </p>
 <pre><code> print(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,sep=&quot;.&quot;) 
  &lt;&lt;&lt;a.b.c</code></pre>
@@ -103,7 +138,14 @@ print(message)</code></pre>
 <pre><code>&gt;&gt;&gt;a = input(&quot;请输入:&quot;)
 请输入:123                
 &gt;&gt;&gt; type(a)
-&lt;class &#39;str&#39;&gt;         </code></pre>
+&lt;class &#39;str&#39;&gt; </code></pre>
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>1.条件控制</p>
+<p>基本格式：<br>    if 条件1:<br>            语句<br>    elif 条件2:<br>           语句<br>    else:<br>            语句</p>
+<hr>
+<p>if嵌套格式:<br>    if 条件1:<br>        语句<br>        if 条件2:<br>            语句<br>        elif 条件3:<br>            语句<br>        else:<br>            语句<br>    elif 条件4:<br>        语句<br>    else:<br>        语句</p>
+<hr>
+<p>2.循环语句 （for 和 while）</p>
+<p>while 循环形式：<br>    while 条件:<br>        语句</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
