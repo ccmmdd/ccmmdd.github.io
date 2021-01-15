@@ -191,6 +191,7 @@ netstat -选项
 <h3 id="包管理命令"><a href="#包管理命令" class="headerlink" title="包管理命令"></a>包管理命令</h3><p>1.rpm<br>命名规则:软件包名-软件版本-发布次数-适合的linux平台-适合的硬件平台-拓展名</p>
 <hr>
 <p>rpm命令<br>    rpm -选项 包全名<br>    -i 安装<br>    -v 显示详细信息<br>    -h 进度<br>    –nodeps 不检查依赖性<br>    -U 升级<br>    -e 卸载（可以用包名）<br>    -q 查询<br>    -a 全部<br>    -qi 查看详细信息<br>    -f 查询系统文件属于哪个软件包<br>    -qR 查询依赖性<br>    -V 校验</p>
+<p>2.yum<br>yum命令<br>    yum list 查询所有可用软件包列表<br>        search 关键字 搜索服务器上所有关键字相关的包<br>        -y install 包名 -y自动回答yes安装<br>        -y update 包名 升级<br>    注意:不要在远程登录下升级所有包名<br>        -y remove 包名 卸载<br>        clean packages 清除缓存目录下的软件包</p>
 <h2 id="文本编辑器vi-vim"><a href="#文本编辑器vi-vim" class="headerlink" title="文本编辑器vi/vim"></a>文本编辑器vi/vim</h2><hr>
 <h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><hr>
 <pre><code>命令模式           输入vi进入                  输入wq退去
@@ -235,6 +236,127 @@ vim特有
       <categories>
         <category>linux</category>
         <category>命令</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python入门</title>
+    <url>/2019/12/20/python/</url>
+    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
+<p> 输入代码：<br> print(“hello world!”)</p>
+<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
+<hr>
+<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。<br> 不能使用关键字<br> 见名知意</p>
+<hr>
+<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
+<hr>
+<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
+<hr>
+<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
+<hr>
+<p>6.常量：里面的值不能改变</p>
+<hr>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p> 查看数据类型 type(变量名)<br> 六个标准的数据类型<br> 不可变(Number（数字）String（字符串）List（列表）)<br> 可变(Tuple（元组）Set（集合）Dictionary（字典）)</p>
+<hr>
+<p>1.Number（数字）<br> 整型(Int) 是正或负整数，不带小数点。</p>
+<p> 浮点型(float) :浮点型由整数部分与小数部分组成，也可以使用科学计数法表示</p>
+<p> 复数 (complex) :复数由实数部分和虚数部分构成，可以用a + bj,或者complex(a,b)表示， 复   数的实部a和虚部b都是浮点型。</p>
+<p> 布尔(bool):True 和 False</p>
+<p> <strong>数字类型转换</strong><br> int( )  转换一个整数<br> float( ) 转换一个浮点数<br> complex(  ,  )  转换到一个复数</p>
+<p>2.String（字符串）<br> 使用引号( ‘ 或 “ )来创建字符串</p>
+<p><strong>转义字符</strong><br> 用反斜杠 \ 转义字符，字符串前加r后面的转义都不会生效。<br> (在行尾时)    续行符<br> \a                         响铃<br> \000                 空<br> \n                         换行<br> \r                        回车<br> \v                         纵向制表符<br> \t                          横向制表符（一个table）</p>
+<p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %.xf      格式化浮点数字，可指定小数点后的精度,x为指定数字</p>
+<p><strong>三引号</strong><br>三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。</p>
+<hr>
+<p>3.List（列表）</p>
+<p> 格式 名词 = [ , , ..]</p>
+<p> 访问列表的值       print(名词[索引])</p>
+<p> 更新列表               名词 [索引] = 变量       </p>
+<p> 删除列表元素        del 名词[索引]</p>
+<p> 脚本操作符</p>
+<pre><code> len([1, 2, 3])            3                       长度
+ [1, 2, 3] + [4, 5, 6]    [1, 2, 3, 4, 5, 6]       组合
+ [&#39;H&#39;] * 4                [&#39;H&#39;, &#39;H&#39;, &#39;H&#39;, &#39;H&#39;]   重复
+ 3 in [1, 2, 3]             True                   元素是否存在于列表中</code></pre>
+<p> 嵌套列表                名词1 = [名词2，名词3，…]</p>
+<hr>
+<p>4.Tuple（元组）<br>元组和列表区别<br> 元组与列表类似，不同之处在于元组的元素不能修改。<br> 元组使用小括号 ( )，列表使用方括号 [ ]<br> 元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用</p>
+<hr>
+<p>5.</p>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>1.算术运算符</p>
+<pre><code>+    两个对象相加    
+-    两个对象相减
+*    两个数相乘      是返回一个被重复若干次的字符串
+/    两个对象相除
+%    返回除法的余数
+**    幂
+//    向下取接近商的整数    </code></pre>
+<p>2.比较运算符</p>
+<pre><code>==    比较对象是否相等
+!=    比较两个对象是否不相等
+&gt;    返回x是否大于y
+&lt;    返回x是否小于y
+&gt;=    返回x是否大于等于y
+&lt;=    返回x是否小于等于y    </code></pre>
+<p>3.赋值运算符</p>
+<pre><code> =    等于
+ +=    加法    c += a  等效于 c = c + a
+ -=    减法    c -= a  等效于 c = c - a
+ *=    乘法    c *= a  等效于 c = c * a
+ /=    除法    c /= a  等效于 c = c / a
+ %=    取模    c %= a  等效于 c = c % a
+ **=    幂     c **= a 等效于 c = c ** a
+ //=    整除    c //= a 等效于 c = c // a</code></pre>
+<p>4.位运算符</p>
+<pre><code>&amp;    与       参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0
+|    或       只要对应的二个二进位有一个为1时，结果位就为1
+^    异或      当两对应的二进位相异时，结果为1    
+~    取反对数据的每个二进制位取反,即把1变为0,把0变为1
+&lt;&lt;    左移动     运算数的各二进位全部左移若干位 高位丢弃，低位补0。
+&gt;&gt;    右移动     运算数的各二进位全部右移若干位</code></pre>
+<p>5.逻辑运算符</p>
+<pre><code>and    布尔&quot;与&quot; 当a和b两个表达式都为真时,结果才为真,否则为假
+or    布尔&quot;或&quot; 当a和b两个表达式都为假时,结果才是假,否则为真
+not 布尔&quot;非&quot; 真变假,假变真</code></pre>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.print函数   print() 方法用于打印输出</p>
+<p>seq–用来间隔多个对象 </p>
+<pre><code> print(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,sep=&quot;.&quot;) 
+ &lt;&lt;&lt;a.b.c</code></pre>
+<p>end–末尾加转义字符</p>
+<p>format–占位符</p>
+<pre><code>age = 2
+message = &quot;我的年龄是&#123;&#125;&quot;.format(age)
+print(message)</code></pre>
+<p>2.input函数 input() 函数接受一个标准输入数据，<u>返回为 string 类型</u></p>
+<pre><code>&gt;&gt;&gt;a = input(&quot;请输入:&quot;)
+请输入:123                
+&gt;&gt;&gt; type(a)
+&lt;class &#39;str&#39;&gt; </code></pre>
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>1.条件控制</p>
+<p>基本格式：<br>    if 条件1:<br>            语句<br>    elif 条件2:<br>           语句<br>    else:<br>            语句</p>
+<hr>
+<p>if嵌套格式:<br>    if 条件1:<br>        语句<br>        if 条件2:<br>            语句<br>        elif 条件3:<br>            语句<br>        else:<br>            语句<br>    elif 条件4:<br>        语句<br>    else:<br>        语句</p>
+<hr>
+<p>2.循环语句 （for 和 while）</p>
+<p>while 循环形式：<br>    while 条件:<br>        语句</p>
+<hr>
+<p>无限循环:<br>    设置表达式永远为True即可</p>
+<hr>
+<p>while…else循环语句:<br>    while 条件<br>        语句<br>    else:<br>        语句        </p>
+<hr>
+<p>for循环语句:<br>    for 变量 in 名词<br>        语句<br>    else:<br>        语句<br>range函数使用<br>    for 变量 in range（起点，终点，步长）<br>    创建列表  list(range(长度))</p>
+<hr>
+<p>break和continue语句<br>    break语句可以跳出 for 和 while 的循环体。如果你从 for 或 while 循环中终止，任何对应的循环 else 块将不执行。</p>
+<pre><code>continue语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。</code></pre>
+<hr>
+<p>pass语句<br>    pass是空语句，是为了保持程序结构的完整性</p>
+]]></content>
+      <categories>
+        <category>python</category>
       </categories>
       <tags>
         <tag>学习资料</tag>
@@ -340,100 +462,6 @@ vim特有
       </categories>
       <tags>
         <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python入门</title>
-    <url>/2019/12/20/python/</url>
-    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
-<p> 输入代码：<br> print(“hello world!”)</p>
-<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
-<hr>
-<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。<br> 不能使用关键字<br> 见名知意</p>
-<hr>
-<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
-<hr>
-<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
-<hr>
-<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
-<hr>
-<p>6.常量：里面的值不能改变</p>
-<hr>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p> 查看数据类型 type(变量名)<br> 六个标准的数据类型<br> 不可变(Number（数字）String（字符串）List（列表）)<br> 可变(Tuple（元组）Set（集合）Dictionary（字典）)</p>
-<hr>
-<p>1.Number（数字）<br> 整型(Int) 是正或负整数，不带小数点。</p>
-<p> 浮点型(float) :浮点型由整数部分与小数部分组成，也可以使用科学计数法表示</p>
-<p> 复数 (complex) :复数由实数部分和虚数部分构成，可以用a + bj,或者complex(a,b)表示， 复   数的实部a和虚部b都是浮点型。</p>
-<p> 布尔(bool):True 和 False</p>
-<p> <strong>数字类型转换</strong><br> int( )  转换一个整数<br> float( ) 转换一个浮点数<br> complex(  ,  )  转换到一个复数</p>
-<p>2.String（字符串）<br> 使用引号( ‘ 或 “ )来创建字符串</p>
-<p><strong>转义字符</strong><br> 用反斜杠 \ 转义字符，字符串前加r后面的转义都不会生效。<br> (在行尾时)    续行符<br> \a                         响铃<br> \000                 空<br> \n                         换行<br> \r                        回车<br> \v                         纵向制表符<br> \t                          横向制表符（一个table）</p>
-<p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %.xf      格式化浮点数字，可指定小数点后的精度,x为指定数字</p>
-<p><strong>三引号</strong><br>三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。</p>
-<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>1.算术运算符</p>
-<pre><code>+    两个对象相加    
--    两个对象相减
-*    两个数相乘      是返回一个被重复若干次的字符串
-/    两个对象相除
-%    返回除法的余数
-**    幂
-//    向下取接近商的整数    </code></pre>
-<p>2.比较运算符</p>
-<pre><code>==    比较对象是否相等
-!=    比较两个对象是否不相等
-&gt;    返回x是否大于y
-&lt;    返回x是否小于y
-&gt;=    返回x是否大于等于y
-&lt;=    返回x是否小于等于y    </code></pre>
-<p>3.赋值运算符</p>
-<pre><code> =    等于
- +=    加法    c += a  等效于 c = c + a
- -=    减法    c -= a  等效于 c = c - a
- *=    乘法    c *= a  等效于 c = c * a
- /=    除法    c /= a  等效于 c = c / a
- %=    取模    c %= a  等效于 c = c % a
- **=    幂     c **= a 等效于 c = c ** a
- //=    整除    c //= a 等效于 c = c // a</code></pre>
-<p>4.位运算符</p>
-<pre><code>&amp;    与       参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0
-|    或       只要对应的二个二进位有一个为1时，结果位就为1
-^    异或      当两对应的二进位相异时，结果为1    
-~    取反对数据的每个二进制位取反,即把1变为0,把0变为1
-&lt;&lt;    左移动     运算数的各二进位全部左移若干位 高位丢弃，低位补0。
-&gt;&gt;    右移动     运算数的各二进位全部右移若干位</code></pre>
-<p>5.逻辑运算符</p>
-<pre><code>and    布尔&quot;与&quot; 当a和b两个表达式都为真时,结果才为真,否则为假
-or    布尔&quot;或&quot; 当a和b两个表达式都为假时,结果才是假,否则为真
-not 布尔&quot;非&quot; 真变假,假变真</code></pre>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.print函数   print() 方法用于打印输出</p>
-<p>seq–用来间隔多个对象 </p>
-<pre><code> print(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,sep=&quot;.&quot;) 
- &lt;&lt;&lt;a.b.c</code></pre>
-<p>end–末尾加转义字符</p>
-<p>format–占位符</p>
-<pre><code>age = 2
-message = &quot;我的年龄是&#123;&#125;&quot;.format(age)
-print(message)</code></pre>
-<p>2.input函数 input() 函数接受一个标准输入数据，<u>返回为 string 类型</u></p>
-<pre><code>&gt;&gt;&gt;a = input(&quot;请输入:&quot;)
-请输入:123                
-&gt;&gt;&gt; type(a)
-&lt;class &#39;str&#39;&gt; </code></pre>
-<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>1.条件控制</p>
-<p>基本格式：<br>    if 条件1:<br>            语句<br>    elif 条件2:<br>           语句<br>    else:<br>            语句</p>
-<hr>
-<p>if嵌套格式:<br>    if 条件1:<br>        语句<br>        if 条件2:<br>            语句<br>        elif 条件3:<br>            语句<br>        else:<br>            语句<br>    elif 条件4:<br>        语句<br>    else:<br>        语句</p>
-<hr>
-<p>2.循环语句 （for 和 while）</p>
-<p>while 循环形式：<br>    while 条件:<br>        语句</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
       </tags>
   </entry>
   <entry>
@@ -569,6 +597,36 @@ print(message)</code></pre>
 <p>28.federal adj.联邦制的 federation n.联盟</p>
 <p>29.garment n.衣服;外衣&amp;v.给…穿衣服</p>
 <p>30.gram n.克</p>
+<h3 id="day-five"><a href="#day-five" class="headerlink" title="day five"></a>day five</h3><p>1.convey vt.运输;传送</p>
+<p>2.elevator n.升降机;电梯</p>
+<p>3.perfect adj.完美的&amp;vt.使完善 perfection n.完美</p>
+<p>4.topic n.话题; 题目</p>
+<p>5.dam n.水坝 </p>
+<p>6.devil n.恶魔</p>
+<p>7.eliminate vt.排除;淘汰</p>
+<p>8.grain n.谷物;一点儿</p>
+<p>9.creep vi.爬行（慢）creep-crept-crept</p>
+<p>10.tick v.打对号&amp;n.滴答声;对号<br> leap tick 喜剧演员假装出来的大肚子</p>
+<p>11.parade v.游行;&amp;v.检阅</p>
+<p>12.defect n.缺点</p>
+<p>13.realm n.领域;国度</p>
+<p>14.zoom vi.猛涨</p>
+<p>15.zip n.拉链;v.拉上 zipper n.拉链</p>
+<p>16.cock n.公鸡;龙头</p>
+<p>17.mustard n.芥末</p>
+<p>18.protein n.蛋白质</p>
+<p>19.sleeve n.袖子</p>
+<p>20.sexual adj.性别的</p>
+<p>21.tortoise n.乌龟</p>
+<p>22.yoga n.瑜伽</p>
+<p>23.hostile adj.敌对的</p>
+<p>24.cheek n.脸颊</p>
+<p>25.noun n.名词</p>
+<p>26.nitrogen n.氮</p>
+<p>27.noble adj.高贵的;崇高的&amp;n.贵族</p>
+<p>28.quilt n.被子</p>
+<p>29.radar n.雷达</p>
+<p>30.tedious adj.乏味的</p>
 ]]></content>
       <categories>
         <category>English</category>

@@ -90,6 +90,22 @@
 <p><strong>转义字符</strong><br> 用反斜杠 \ 转义字符，字符串前加r后面的转义都不会生效。<br> (在行尾时)    续行符<br> \a                         响铃<br> \000                 空<br> \n                         换行<br> \r                        回车<br> \v                         纵向制表符<br> \t                          横向制表符（一个table）</p>
 <p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %.xf      格式化浮点数字，可指定小数点后的精度,x为指定数字</p>
 <p><strong>三引号</strong><br>三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。</p>
+<hr>
+<p>3.List（列表）</p>
+<p> 格式 名词 = [ , , ..]</p>
+<p> 访问列表的值       print(名词[索引])</p>
+<p> 更新列表               名词 [索引] = 变量       </p>
+<p> 删除列表元素        del 名词[索引]</p>
+<p> 脚本操作符</p>
+<pre><code> len([1, 2, 3])            3                       长度
+ [1, 2, 3] + [4, 5, 6]    [1, 2, 3, 4, 5, 6]       组合
+ [&#39;H&#39;] * 4                [&#39;H&#39;, &#39;H&#39;, &#39;H&#39;, &#39;H&#39;]   重复
+ 3 in [1, 2, 3]             True                   元素是否存在于列表中</code></pre>
+<p> 嵌套列表                名词1 = [名词2，名词3，…]</p>
+<hr>
+<p>4.Tuple（元组）<br>元组和列表区别<br> 元组与列表类似，不同之处在于元组的元素不能修改。<br> 元组使用小括号 ( )，列表使用方括号 [ ]<br> 元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用</p>
+<hr>
+<p>5.</p>
 <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>1.算术运算符</p>
 <pre><code>+    两个对象相加    
 -    两个对象相减
@@ -146,6 +162,17 @@ print(message)</code></pre>
 <hr>
 <p>2.循环语句 （for 和 while）</p>
 <p>while 循环形式：<br>    while 条件:<br>        语句</p>
+<hr>
+<p>无限循环:<br>    设置表达式永远为True即可</p>
+<hr>
+<p>while…else循环语句:<br>    while 条件<br>        语句<br>    else:<br>        语句        </p>
+<hr>
+<p>for循环语句:<br>    for 变量 in 名词<br>        语句<br>    else:<br>        语句<br>range函数使用<br>    for 变量 in range（起点，终点，步长）<br>    创建列表  list(range(长度))</p>
+<hr>
+<p>break和continue语句<br>    break语句可以跳出 for 和 while 的循环体。如果你从 for 或 while 循环中终止，任何对应的循环 else 块将不执行。</p>
+<pre><code>continue语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。</code></pre>
+<hr>
+<p>pass语句<br>    pass是空语句，是为了保持程序结构的完整性</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">

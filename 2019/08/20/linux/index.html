@@ -253,6 +253,7 @@ netstat -选项
 <h3 id="包管理命令"><a href="#包管理命令" class="headerlink" title="包管理命令"></a>包管理命令</h3><p>1.rpm<br>命名规则:软件包名-软件版本-发布次数-适合的linux平台-适合的硬件平台-拓展名</p>
 <hr>
 <p>rpm命令<br>    rpm -选项 包全名<br>    -i 安装<br>    -v 显示详细信息<br>    -h 进度<br>    –nodeps 不检查依赖性<br>    -U 升级<br>    -e 卸载（可以用包名）<br>    -q 查询<br>    -a 全部<br>    -qi 查看详细信息<br>    -f 查询系统文件属于哪个软件包<br>    -qR 查询依赖性<br>    -V 校验</p>
+<p>2.yum<br>yum命令<br>    yum list 查询所有可用软件包列表<br>        search 关键字 搜索服务器上所有关键字相关的包<br>        -y install 包名 -y自动回答yes安装<br>        -y update 包名 升级<br>    注意:不要在远程登录下升级所有包名<br>        -y remove 包名 卸载<br>        clean packages 清除缓存目录下的软件包</p>
 <h2 id="文本编辑器vi-vim"><a href="#文本编辑器vi-vim" class="headerlink" title="文本编辑器vi/vim"></a>文本编辑器vi/vim</h2><hr>
 <h3 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h3><hr>
 <pre><code>命令模式           输入vi进入                  输入wq退去
