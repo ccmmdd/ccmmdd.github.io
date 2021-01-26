@@ -105,7 +105,16 @@
 <hr>
 <p>4.Tuple（元组）<br>元组和列表区别<br> 元组与列表类似，不同之处在于元组的元素不能修改。<br> 元组使用小括号 ( )，列表使用方括号 [ ]<br> 元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用</p>
 <hr>
-<p>5.</p>
+<p>5.Set（集合）一个无序的不重复元素序列<br>使用大括号 { } 或者 set() 函数创建集合<br>创建一个空集合必须用 set()</p>
+<p>添加元素     集合名.add/update(元素)</p>
+<p>删除元素     集合名.remove/discard(元素)   注:pop为随机删除</p>
+<hr>
+<p>6.Dictionary（字典）可存储任意类型对象</p>
+<p>每个键值对用冒号 : 分割，每个对之间用逗号(,)分割，整个字典包括在花括号 {} 中 </p>
+<p>访问字典里的值         dict={‘键名’}</p>
+<p>清空字典                    dict.clear()</p>
+<p>删除字典                    del dict [‘键名’]</p>
+<p>特性:不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住<br>   键必须不可变，所以可以用数字，字符串或元组充当，而用列表就不行</p>
 <h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>1.算术运算符</p>
 <pre><code>+    两个对象相加    
 -    两个对象相减
@@ -141,7 +150,9 @@
 <pre><code>and    布尔&quot;与&quot; 当a和b两个表达式都为真时,结果才为真,否则为假
 or    布尔&quot;或&quot; 当a和b两个表达式都为假时,结果才是假,否则为真
 not 布尔&quot;非&quot; 真变假,假变真</code></pre>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.print函数   print() 方法用于打印输出</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.函数<br> 定义一个函数<br>    def 标识符名(函数参数):<br>    函数体</p>
+<p> 函数调用<br>     标识符名()</p>
+<p>2.print函数   print() 方法用于打印输出</p>
 <p>seq–用来间隔多个对象 </p>
 <pre><code> print(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,sep=&quot;.&quot;) 
  &lt;&lt;&lt;a.b.c</code></pre>
@@ -150,7 +161,7 @@ not 布尔&quot;非&quot; 真变假,假变真</code></pre>
 <pre><code>age = 2
 message = &quot;我的年龄是&#123;&#125;&quot;.format(age)
 print(message)</code></pre>
-<p>2.input函数 input() 函数接受一个标准输入数据，<u>返回为 string 类型</u></p>
+<p>3.input函数 input() 函数接受一个标准输入数据，<u>返回为 string 类型</u></p>
 <pre><code>&gt;&gt;&gt;a = input(&quot;请输入:&quot;)
 请输入:123                
 &gt;&gt;&gt; type(a)
@@ -173,6 +184,44 @@ print(message)</code></pre>
 <pre><code>continue语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。</code></pre>
 <hr>
 <p>pass语句<br>    pass是空语句，是为了保持程序结构的完整性</p>
+<hr>
+<h3 id="高级特性"><a href="#高级特性" class="headerlink" title="高级特性"></a>高级特性</h3><p>1.切片<br>    创建一个0-99的数列<br>    &gt;&gt;&gt; L = list(range(100))<br>    前10个数<br>    &gt;&gt;&gt; L<br>    [0, 1, 2, 3, …, 99]<br>    &gt;&gt;&gt; L[:10]<br>    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br>    前10个数，每两个取一个<br>    &gt;&gt;&gt; L[:10:2]<br>    [0, 2, 4, 6, 8]</p>
+<hr>
+<pre><code>只写[:]就可以原样复制一个list</code></pre>
+<p>2.迭代 通过for循环来遍历这个list或tuple，这种遍历我们称为迭代</p>
+<pre><code>&gt;&gt;&gt; d = &#123;&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3&#125;
+&gt;&gt;&gt; for key in d:
+...     print(key)
+...
+a
+c
+b
+结果顺序可能不一样</code></pre>
+<p>判断一个对象是否可迭代</p>
+<pre><code>isinstance(对象, Iterable)</code></pre>
+<p>加上索引下标<br>    enumerate函数<br>    &gt;&gt;&gt;for i, value in enumerate([‘A’, ‘B’, ‘C’]):<br>    …     print(i, value)<br>    …<br>    0 A<br>    1 B<br>    2 C</p>
+<p>3.列表生成式<br>生成list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]可以用list(range(1, 11))</p>
+<pre><code>[x * x for x in range(1, 11)]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code></pre>
+<hr>
+<pre><code>[m + n for m in &#39;ABC&#39; for n in &#39;XYZ&#39;]
+[&#39;AX&#39;, &#39;AY&#39;, &#39;AZ&#39;, &#39;BX&#39;, &#39;BY&#39;, &#39;BZ&#39;, &#39;CX&#39;, &#39;CY&#39;, &#39;CZ&#39;]</code></pre>
+<p>使用两个变量来生成list       dict的items()可以同时迭代key和value<br>    d = {‘x’: ‘A’, ‘y’: ‘B’, ‘z’: ‘C’ }<br>    &gt;&gt;&gt; for k, v in d.items():<br>    …     print(k, ‘=’, v)<br>    …<br>    y = B<br>    x = A<br>    z = C</p>
+<p>4.生成器（generator）<br>创建方法 </p>
+<pre><code>把一个列表生成式的[]改成()
+如果一个函数定义中包含yield关键字，那么这个函数就是一个generator
+
+例：
+def fib(max):
+n, a, b = 0, 0, 1
+  while n &lt; max:
+  yield b
+  a, b = b, a + b
+  n = n + 1
+  return &#39;done&#39;
+
+在每次调用next()的时候执行，遇到yield语句返回</code></pre>
+<p>5.迭代器</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="true">
