@@ -1,289 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>python入门</title>
-    <url>/2019/12/20/python/</url>
-    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
-<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
-<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
-<p> 输入代码：<br> print(“hello world!”)</p>
-<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
-<hr>
-<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。<br> 不能使用关键字<br> 见名知意</p>
-<hr>
-<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
-<hr>
-<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
-<hr>
-<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
-<hr>
-<p>6.常量：里面的值不能改变</p>
-<hr>
-<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p> 查看数据类型 type(变量名)<br> 六个标准的数据类型<br> 不可变(Number（数字）String（字符串）List（列表）)<br> 可变(Tuple（元组）Set（集合）Dictionary（字典）)</p>
-<hr>
-<p>1.Number（数字）<br> 整型(Int) 是正或负整数，不带小数点。</p>
-<p> 浮点型(float) :浮点型由整数部分与小数部分组成，也可以使用科学计数法表示</p>
-<p> 复数 (complex) :复数由实数部分和虚数部分构成，可以用a + bj,或者complex(a,b)表示， 复   数的实部a和虚部b都是浮点型。</p>
-<p> 布尔(bool):True 和 False</p>
-<p> <strong>数字类型转换</strong><br> int( )  转换一个整数<br> float( ) 转换一个浮点数<br> complex(  ,  )  转换到一个复数</p>
-<p>2.String（字符串）<br> 使用引号( ‘ 或 “ )来创建字符串</p>
-<p><strong>转义字符</strong><br> 用反斜杠 \ 转义字符，字符串前加r后面的转义都不会生效。<br> (在行尾时)    续行符<br> \a                         响铃<br> \000                 空<br> \n                         换行<br> \r                        回车<br> \v                         纵向制表符<br> \t                          横向制表符（一个table）</p>
-<p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %.xf      格式化浮点数字，可指定小数点后的精度,x为指定数字</p>
-<p><strong>三引号</strong><br>三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。</p>
-<hr>
-<p>3.List（列表）</p>
-<p> 格式 名词 = [ , , ..]</p>
-<p> 访问列表的值       print(名词[索引])</p>
-<p> 更新列表               名词 [索引] = 变量       </p>
-<p> 删除列表元素        del 名词[索引]</p>
-<p> 脚本操作符</p>
-<pre><code> len([1, 2, 3])            3                       长度
- [1, 2, 3] + [4, 5, 6]    [1, 2, 3, 4, 5, 6]       组合
- [&#39;H&#39;] * 4                [&#39;H&#39;, &#39;H&#39;, &#39;H&#39;, &#39;H&#39;]   重复
- 3 in [1, 2, 3]             True                   元素是否存在于列表中</code></pre>
-<p> 嵌套列表                名词1 = [名词2，名词3，…]</p>
-<hr>
-<p>4.Tuple（元组）<br>元组和列表区别<br> 元组与列表类似，不同之处在于元组的元素不能修改。<br> 元组使用小括号 ( )，列表使用方括号 [ ]<br> 元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用</p>
-<hr>
-<p>5.Set（集合）一个无序的不重复元素序列<br>使用大括号 { } 或者 set() 函数创建集合<br>创建一个空集合必须用 set()</p>
-<p>添加元素     集合名.add/update(元素)</p>
-<p>删除元素     集合名.remove/discard(元素)   注:pop为随机删除</p>
-<hr>
-<p>6.Dictionary（字典）可存储任意类型对象</p>
-<p>每个键值对用冒号 : 分割，每个对之间用逗号(,)分割，整个字典包括在花括号 {} 中 </p>
-<p>访问字典里的值         dict={‘键名’}</p>
-<p>清空字典                    dict.clear()</p>
-<p>删除字典                    del dict [‘键名’]</p>
-<p>特性:不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住<br>   键必须不可变，所以可以用数字，字符串或元组充当，而用列表就不行</p>
-<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>1.算术运算符</p>
-<pre><code>+    两个对象相加    
--    两个对象相减
-*    两个数相乘      是返回一个被重复若干次的字符串
-/    两个对象相除
-%    返回除法的余数
-**    幂
-//    向下取接近商的整数    </code></pre>
-<p>2.比较运算符</p>
-<pre><code>==    比较对象是否相等
-!=    比较两个对象是否不相等
-&gt;    返回x是否大于y
-&lt;    返回x是否小于y
-&gt;=    返回x是否大于等于y
-&lt;=    返回x是否小于等于y    </code></pre>
-<p>3.赋值运算符</p>
-<pre><code> =    等于
- +=    加法    c += a  等效于 c = c + a
- -=    减法    c -= a  等效于 c = c - a
- *=    乘法    c *= a  等效于 c = c * a
- /=    除法    c /= a  等效于 c = c / a
- %=    取模    c %= a  等效于 c = c % a
- **=    幂     c **= a 等效于 c = c ** a
- //=    整除    c //= a 等效于 c = c // a</code></pre>
-<p>4.位运算符</p>
-<pre><code>&amp;    与       参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0
-|    或       只要对应的二个二进位有一个为1时，结果位就为1
-^    异或      当两对应的二进位相异时，结果为1    
-~    取反对数据的每个二进制位取反,即把1变为0,把0变为1
-&lt;&lt;    左移动     运算数的各二进位全部左移若干位 高位丢弃，低位补0。
-&gt;&gt;    右移动     运算数的各二进位全部右移若干位</code></pre>
-<p>5.逻辑运算符</p>
-<pre><code>and    布尔&quot;与&quot; 当a和b两个表达式都为真时,结果才为真,否则为假
-or    布尔&quot;或&quot; 当a和b两个表达式都为假时,结果才是假,否则为真
-not 布尔&quot;非&quot; 真变假,假变真</code></pre>
-<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.函数<br> 定义一个函数<br>    def 标识符名(函数参数):<br>    函数体</p>
-<p> 函数调用<br>     标识符名()</p>
-<p>2.print函数   print() 方法用于打印输出</p>
-<p>seq–用来间隔多个对象 </p>
-<pre><code> print(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,sep=&quot;.&quot;) 
- &lt;&lt;&lt;a.b.c</code></pre>
-<p>end–末尾加转义字符</p>
-<p>format–占位符</p>
-<pre><code>age = 2
-message = &quot;我的年龄是&#123;&#125;&quot;.format(age)
-print(message)</code></pre>
-<p>3.input函数 input() 函数接受一个标准输入数据，<u>返回为 string 类型</u></p>
-<pre><code>&gt;&gt;&gt;a = input(&quot;请输入:&quot;)
-请输入:123                
-&gt;&gt;&gt; type(a)
-&lt;class &#39;str&#39;&gt; </code></pre>
-<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>1.条件控制</p>
-<p>基本格式：<br>    if 条件1:<br>            语句<br>    elif 条件2:<br>           语句<br>    else:<br>            语句</p>
-<hr>
-<p>if嵌套格式:<br>    if 条件1:<br>        语句<br>        if 条件2:<br>            语句<br>        elif 条件3:<br>            语句<br>        else:<br>            语句<br>    elif 条件4:<br>        语句<br>    else:<br>        语句</p>
-<hr>
-<p>2.循环语句 （for 和 while）</p>
-<p>while 循环形式：<br>    while 条件:<br>        语句</p>
-<hr>
-<p>无限循环:<br>    设置表达式永远为True即可</p>
-<hr>
-<p>while…else循环语句:<br>    while 条件<br>        语句<br>    else:<br>        语句        </p>
-<hr>
-<p>for循环语句:<br>    for 变量 in 名词<br>        语句<br>    else:<br>        语句<br>range函数使用<br>    for 变量 in range（起点，终点，步长）<br>    创建列表  list(range(长度))</p>
-<hr>
-<p>break和continue语句<br>    break语句可以跳出 for 和 while 的循环体。如果你从 for 或 while 循环中终止，任何对应的循环 else 块将不执行。</p>
-<pre><code>continue语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。</code></pre>
-<hr>
-<p>pass语句<br>    pass是空语句，是为了保持程序结构的完整性</p>
-<hr>
-<h3 id="高级特性"><a href="#高级特性" class="headerlink" title="高级特性"></a>高级特性</h3><p>1.切片<br>    创建一个0-99的数列<br>    &gt;&gt;&gt; L = list(range(100))<br>    前10个数<br>    &gt;&gt;&gt; L<br>    [0, 1, 2, 3, …, 99]<br>    &gt;&gt;&gt; L[:10]<br>    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br>    前10个数，每两个取一个<br>    &gt;&gt;&gt; L[:10:2]<br>    [0, 2, 4, 6, 8]</p>
-<hr>
-<pre><code>只写[:]就可以原样复制一个list</code></pre>
-<p>2.迭代 通过for循环来遍历这个list或tuple，这种遍历我们称为迭代</p>
-<pre><code>&gt;&gt;&gt; d = &#123;&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3&#125;
-&gt;&gt;&gt; for key in d:
-...     print(key)
-...
-a
-c
-b
-结果顺序可能不一样</code></pre>
-<p>判断一个对象是否可迭代</p>
-<pre><code>isinstance(对象, Iterable)</code></pre>
-<p>加上索引下标<br>    enumerate函数<br>    &gt;&gt;&gt;for i, value in enumerate([‘A’, ‘B’, ‘C’]):<br>    …     print(i, value)<br>    …<br>    0 A<br>    1 B<br>    2 C</p>
-<p>3.列表生成式<br>生成list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]可以用list(range(1, 11))</p>
-<pre><code>[x * x for x in range(1, 11)]
-[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code></pre>
-<hr>
-<pre><code>[m + n for m in &#39;ABC&#39; for n in &#39;XYZ&#39;]
-[&#39;AX&#39;, &#39;AY&#39;, &#39;AZ&#39;, &#39;BX&#39;, &#39;BY&#39;, &#39;BZ&#39;, &#39;CX&#39;, &#39;CY&#39;, &#39;CZ&#39;]</code></pre>
-<p>使用两个变量来生成list       dict的items()可以同时迭代key和value<br>    d = {‘x’: ‘A’, ‘y’: ‘B’, ‘z’: ‘C’ }<br>    &gt;&gt;&gt; for k, v in d.items():<br>    …     print(k, ‘=’, v)<br>    …<br>    y = B<br>    x = A<br>    z = C</p>
-<p>4.生成器（generator）<br>创建方法 </p>
-<pre><code>把一个列表生成式的[]改成()
-如果一个函数定义中包含yield关键字，那么这个函数就是一个generator
-
-例：
-def fib(max):
-n, a, b = 0, 0, 1
-  while n &lt; max:
-  yield b
-  a, b = b, a + b
-  n = n + 1
-  return &#39;done&#39;
-
-在每次调用next()的时候执行，遇到yield语句返回</code></pre>
-<p>5.迭代器</p>
-]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>学习资料</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客搭建</title>
-    <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><hr>
-<pre><code>node.js 
-.  下载网址： https://nodejs.org/zh-cn/  
-.  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
-<hr>
-<pre><code>git  
-.  下载网址： https://git-scm.com/downloads
-.  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
-<hr>
-<pre><code>Visual  Studio code
-.  下载网址：https://code.visualstudio.com/
-.  安装教程：https://jingyan.baidu.com/article/fd8044fa0cc1115030137a4b.html</code></pre>
-<hr>
-<pre><code>安装加速软件源 
-.  第一步：win+r 输入 cmd
-.  第二步：输入 npm install -g cnpm --registry=https://registry.npm.taobao.org
-.  第三步：输入 cnpm install -g hexo </code></pre>
-<hr>
-<h3 id="二-初始化博客"><a href="#二-初始化博客" class="headerlink" title="二.初始化博客"></a>二.初始化博客</h3><hr>
-<pre><code>新建一个空白文件夹（名字随意，自己认识就好）</code></pre>
-<hr>
-<pre><code>打开文件夹搜索地址栏</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%90%9C%E7%B4%A2%E6%A0%8F.png" alt="搜索栏"></p>
-<hr>
-<pre><code>  在标记位置清空原有内容并输入cmd，然后回车</code></pre>
-<hr>
-<pre><code>输入命令（依次输入）
-    hexo init         # 初始化博客（过程较慢）
-    hexo generate     # 生成博客系统
-    hexo server      # 开启博客本地测试</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cmd.png" alt="cmd"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%9C%AC%E5%9C%B0%E6%88%90%E5%8A%9F%E5%9B%BE%E7%89%87.png" alt="成功图片"></p>
-<hr>
-<pre><code>    运行成功会出上面第一张图的结果，接着打开浏览器输入 http://localhost:4000 查看自己的博客初始页面，到此就完成了本地搭建的过程。</code></pre>
-<hr>
-<h3 id="三-仓库和ssh"><a href="#三-仓库和ssh" class="headerlink" title="三.仓库和ssh"></a>三.仓库和ssh</h3><hr>
-<pre><code> 注册自己的github账号  网址：https://github.com/
- 不会注册的自己搜索教程吧！</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gitbash.png" alt="gitbash"></p>
-<hr>
-<pre><code> 打开上图的软件（右击桌面）
- 输入命令(依次输入)
-      git config --global user.email &quot;github注册时使用的邮箱&quot;
-      git config --global user.name &quot;github用的用户名&quot;
-      ssh-keygen -t rsa -C &quot;github注册时使用的邮箱&quot; # 这个命令会有好几个地方等待你输入，直接回车即可</code></pre>
-<hr>
-<pre><code> 打开文件夹，如下图</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%BD%8D%E7%BD%AE.png" alt="位置"></p>
-<hr>
-<pre><code> 打开文件夹中的 id_rsa.pub 文件(用 VScode 打开)
- 复制文件中的所有内容</code></pre>
-<hr>
-<pre><code> 打开github，并按照下面步骤执行</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github1.png" alt="github1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github2.png" alt="github2">  title随意</p>
-<hr>
-<pre><code> 测试是否成功
- 输入命令
-      ssh -T git@github.com # 中途输入一次yes</code></pre>
-<hr>
-<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/git1.png" alt="git1">  出现即为成功</p>
-<hr>
-<pre><code> 打开github，点击左上角小猫回到首页
- 点击创建仓库（create repository）
- Repository name 输入格式 github用户名.github.io
- 点击create repository</code></pre>
-<hr>
-<pre><code> 到此仓库和ssh就完成了</code></pre>
-<h3 id="四-配置文件修改"><a href="#四-配置文件修改" class="headerlink" title="四.配置文件修改"></a>四.配置文件修改</h3><hr>
-<pre><code> 打开你创建的文件夹，找到_config.yml文件，使用vscode或notepad++打开</code></pre>
-<hr>
-<p>修改文件中以下部分<br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai1.png" alt="gai1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai2.png" alt="gai2"></p>
-<hr>
-<h3 id="五-上传"><a href="#五-上传" class="headerlink" title="五.上传"></a>五.上传</h3><hr>
-<pre><code> 打开文件夹搜索地址栏，输入cmd
- 输入命令（依次输入）
-      cnpm install hexo-deployer-git --save   # 安装自动上传到github的工具
-     hexo clean      # 清理缓存
-     hexo generate   # 生成博客网页
-     hexo deploy     # 部署网页到github上面</code></pre>
-<hr>
-<pre><code> 打开浏览器，输入网址 https://github用户名.github.io 即可打开自己博客</code></pre>
-<hr>
-<h3 id="六-美化"><a href="#六-美化" class="headerlink" title="六.美化"></a>六.美化</h3><hr>
-<pre><code> 网站推荐：https://hexo.io/themes/
- 也可以自己寻找</code></pre>
-<hr>
-]]></content>
-      <categories>
-        <category>node</category>
-        <category>git</category>
-      </categories>
-      <tags>
-        <tag>blog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>简介</title>
-    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
-      <categories>
-        <category>介绍</category>
-      </categories>
-      <tags>
-        <tag>自述</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>linux命令</title>
     <url>/2019/08/20/linux/</url>
     <content><![CDATA[<h6 id="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"><a href="#因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。" class="headerlink" title="因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。"></a>因为心中有梦，所以暗里有光，遥遥无期，那又怎样，踮起脚尖，就更接近阳光。</h6><h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><h3 id="文件处理"><a href="#文件处理" class="headerlink" title="文件处理"></a>文件处理</h3><hr>
@@ -522,6 +239,321 @@ vim特有
       </categories>
       <tags>
         <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>python入门</title>
+    <url>/2019/12/20/python/</url>
+    <content><![CDATA[<h6 id="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"><a href="#一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。" class="headerlink" title="一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。"></a>一言一语，江南一梦，终是匆匆一过。一场来去，多少寂寞、多少无奈、多少感伤。</h6><hr>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>1.下载 python   网址：<a href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a><br>  安装：安装中记得点path；打开cmd输入python，出现版本号即为成功<br>2.vs code</p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>1.第一个程序<br> 新建一个文件，后缀名改为py</p>
+<p> 输入代码：<br> print(“hello world!”)</p>
+<p> 保存并打开cmd，切换到文件目录，输入python 文件名.py</p>
+<hr>
+<p>2.命名规则<br> 第一个字符必须是字母表中字母或下划线 _ 。<br> 标识符只能是英文字母、数字和下划线的组合。<br> 标识符对大小写敏感。<br> 不能使用关键字<br> 见名知意</p>
+<hr>
+<p>3.注释<br> 单行注释以 #<br> 多行注释可以用多个 # 号，还有 ‘’’ 和 “””</p>
+<hr>
+<p>4.保留字<br> 保留字即关键字，不能把它们用作任何标识符名称。<br> 输入：import keyword  回车  keyword.kwlist  查看</p>
+<hr>
+<p>5.变量<br>   相当于生活中的容器（可以放东西），在编程中盛放程序中的数据。（里面的值可以随时改变）。<br>   可存放的类型有：字符串，整型，浮点数，布尔类型，列表，字典，集合</p>
+<hr>
+<p>6.常量：里面的值不能改变</p>
+<hr>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><p> 查看数据类型 type(变量名)<br> 六个标准的数据类型<br> 不可变(Number（数字）String（字符串）List（列表）)<br> 可变(Tuple（元组）Set（集合）Dictionary（字典）)</p>
+<hr>
+<p>1.Number（数字）<br> 整型(Int) 是正或负整数，不带小数点。</p>
+<p> 浮点型(float) :浮点型由整数部分与小数部分组成，也可以使用科学计数法表示</p>
+<p> 复数 (complex) :复数由实数部分和虚数部分构成，可以用a + bj,或者complex(a,b)表示， 复   数的实部a和虚部b都是浮点型。</p>
+<p> 布尔(bool):True 和 False</p>
+<p> <strong>数字类型转换</strong><br> int( )  转换一个整数<br> float( ) 转换一个浮点数<br> complex(  ,  )  转换到一个复数</p>
+<p>2.String（字符串）<br> 使用引号( ‘ 或 “ )来创建字符串</p>
+<p><strong>转义字符</strong><br> 用反斜杠 \ 转义字符，字符串前加r后面的转义都不会生效。<br> (在行尾时)    续行符<br> \a                         响铃<br> \000                 空<br> \n                         换行<br> \r                        回车<br> \v                         纵向制表符<br> \t                          横向制表符（一个table）</p>
+<p><strong>字符串格式化</strong><br>  %s     格式化字符串<br>  %d     格式化整数<br>  %.xf      格式化浮点数字，可指定小数点后的精度,x为指定数字</p>
+<p><strong>三引号</strong><br>三引号允许一个字符串跨多行，字符串中可以包含换行符、制表符以及其他特殊字符。</p>
+<hr>
+<p>3.List（列表）</p>
+<p> 格式 名词 = [ , , ..]</p>
+<p> 访问列表的值       print(名词[索引])</p>
+<p> 更新列表               名词 [索引] = 变量       </p>
+<p> 删除列表元素        del 名词[索引]</p>
+<p> 脚本操作符</p>
+<pre><code> len([1, 2, 3])            3                       长度
+ [1, 2, 3] + [4, 5, 6]    [1, 2, 3, 4, 5, 6]       组合
+ [&#39;H&#39;] * 4                [&#39;H&#39;, &#39;H&#39;, &#39;H&#39;, &#39;H&#39;]   重复
+ 3 in [1, 2, 3]             True                   元素是否存在于列表中</code></pre>
+<p> 嵌套列表                名词1 = [名词2，名词3，…]</p>
+<hr>
+<p>4.Tuple（元组）<br>元组和列表区别<br> 元组与列表类似，不同之处在于元组的元素不能修改。<br> 元组使用小括号 ( )，列表使用方括号 [ ]<br> 元组中只包含一个元素时，需要在元素后面添加逗号，否则括号会被当作运算符使用</p>
+<hr>
+<p>5.Set（集合）一个无序的不重复元素序列<br>使用大括号 { } 或者 set() 函数创建集合<br>创建一个空集合必须用 set()</p>
+<p>添加元素     集合名.add/update(元素)</p>
+<p>删除元素     集合名.remove/discard(元素)   注:pop为随机删除</p>
+<hr>
+<p>6.Dictionary（字典）可存储任意类型对象</p>
+<p>每个键值对用冒号 : 分割，每个对之间用逗号(,)分割，整个字典包括在花括号 {} 中 </p>
+<p>访问字典里的值         dict={‘键名’}</p>
+<p>清空字典                    dict.clear()</p>
+<p>删除字典                    del dict [‘键名’]</p>
+<p>特性:不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住<br>   键必须不可变，所以可以用数字，字符串或元组充当，而用列表就不行</p>
+<h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><p>1.算术运算符</p>
+<pre><code>+    两个对象相加    
+-    两个对象相减
+*    两个数相乘      是返回一个被重复若干次的字符串
+/    两个对象相除
+%    返回除法的余数
+**    幂
+//    向下取接近商的整数    </code></pre>
+<p>2.比较运算符</p>
+<pre><code>==    比较对象是否相等
+!=    比较两个对象是否不相等
+&gt;    返回x是否大于y
+&lt;    返回x是否小于y
+&gt;=    返回x是否大于等于y
+&lt;=    返回x是否小于等于y    </code></pre>
+<p>3.赋值运算符</p>
+<pre><code> =    等于
+ +=    加法    c += a  等效于 c = c + a
+ -=    减法    c -= a  等效于 c = c - a
+ *=    乘法    c *= a  等效于 c = c * a
+ /=    除法    c /= a  等效于 c = c / a
+ %=    取模    c %= a  等效于 c = c % a
+ **=    幂     c **= a 等效于 c = c ** a
+ //=    整除    c //= a 等效于 c = c // a</code></pre>
+<p>4.位运算符</p>
+<pre><code>&amp;    与       参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0
+|    或       只要对应的二个二进位有一个为1时，结果位就为1
+^    异或      当两对应的二进位相异时，结果为1    
+~    取反对数据的每个二进制位取反,即把1变为0,把0变为1
+&lt;&lt;    左移动     运算数的各二进位全部左移若干位 高位丢弃，低位补0。
+&gt;&gt;    右移动     运算数的各二进位全部右移若干位</code></pre>
+<p>5.逻辑运算符</p>
+<pre><code>and    布尔&quot;与&quot; 当a和b两个表达式都为真时,结果才为真,否则为假
+or    布尔&quot;或&quot; 当a和b两个表达式都为假时,结果才是假,否则为真
+not 布尔&quot;非&quot; 真变假,假变真</code></pre>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><p>1.函数<br> 定义一个函数<br>    def 标识符名(函数参数):<br>    函数体</p>
+<p> 函数调用<br>     标识符名()</p>
+<p>2.print函数   print() 方法用于打印输出</p>
+<p>seq–用来间隔多个对象 </p>
+<pre><code> print(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,sep=&quot;.&quot;) 
+ &lt;&lt;&lt;a.b.c</code></pre>
+<p>end–末尾加转义字符</p>
+<p>format–占位符</p>
+<pre><code>age = 2
+message = &quot;我的年龄是&#123;&#125;&quot;.format(age)
+print(message)</code></pre>
+<p>3.input函数 input() 函数接受一个标准输入数据，<u>返回为 string 类型</u></p>
+<pre><code>&gt;&gt;&gt;a = input(&quot;请输入:&quot;)
+请输入:123                
+&gt;&gt;&gt; type(a)
+&lt;class &#39;str&#39;&gt; </code></pre>
+<h3 id="语句"><a href="#语句" class="headerlink" title="语句"></a>语句</h3><p>1.条件控制</p>
+<p>基本格式：<br>    if 条件1:<br>            语句<br>    elif 条件2:<br>           语句<br>    else:<br>            语句</p>
+<hr>
+<p>if嵌套格式:<br>    if 条件1:<br>        语句<br>        if 条件2:<br>            语句<br>        elif 条件3:<br>            语句<br>        else:<br>            语句<br>    elif 条件4:<br>        语句<br>    else:<br>        语句</p>
+<hr>
+<p>2.循环语句 （for 和 while）</p>
+<p>while 循环形式：<br>    while 条件:<br>        语句</p>
+<hr>
+<p>无限循环:<br>    设置表达式永远为True即可</p>
+<hr>
+<p>while…else循环语句:<br>    while 条件<br>        语句<br>    else:<br>        语句        </p>
+<hr>
+<p>for循环语句:<br>    for 变量 in 名词<br>        语句<br>    else:<br>        语句<br>range函数使用<br>    for 变量 in range（起点，终点，步长）<br>    创建列表  list(range(长度))</p>
+<hr>
+<p>break和continue语句<br>    break语句可以跳出 for 和 while 的循环体。如果你从 for 或 while 循环中终止，任何对应的循环 else 块将不执行。</p>
+<pre><code>continue语句被用来告诉 Python 跳过当前循环块中的剩余语句，然后继续进行下一轮循环。</code></pre>
+<hr>
+<p>pass语句<br>    pass是空语句，是为了保持程序结构的完整性</p>
+<hr>
+<h3 id="高级特性"><a href="#高级特性" class="headerlink" title="高级特性"></a>高级特性</h3><p>1.切片<br>    创建一个0-99的数列<br>    &gt;&gt;&gt; L = list(range(100))<br>    前10个数<br>    &gt;&gt;&gt; L<br>    [0, 1, 2, 3, …, 99]<br>    &gt;&gt;&gt; L[:10]<br>    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]<br>    前10个数，每两个取一个<br>    &gt;&gt;&gt; L[:10:2]<br>    [0, 2, 4, 6, 8]</p>
+<hr>
+<pre><code>只写[:]就可以原样复制一个list</code></pre>
+<p>2.迭代 通过for循环来遍历这个list或tuple，这种遍历我们称为迭代</p>
+<pre><code>&gt;&gt;&gt; d = &#123;&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3&#125;
+&gt;&gt;&gt; for key in d:
+...     print(key)
+...
+a
+c
+b
+结果顺序可能不一样</code></pre>
+<p>判断一个对象是否可迭代</p>
+<pre><code>isinstance(对象, Iterable)</code></pre>
+<p>加上索引下标<br>    enumerate函数<br>    &gt;&gt;&gt;for i, value in enumerate([‘A’, ‘B’, ‘C’]):<br>    …     print(i, value)<br>    …<br>    0 A<br>    1 B<br>    2 C</p>
+<p>3.列表生成式<br>生成list [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]可以用list(range(1, 11))</p>
+<pre><code>[x * x for x in range(1, 11)]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code></pre>
+<hr>
+<pre><code>[m + n for m in &#39;ABC&#39; for n in &#39;XYZ&#39;]
+[&#39;AX&#39;, &#39;AY&#39;, &#39;AZ&#39;, &#39;BX&#39;, &#39;BY&#39;, &#39;BZ&#39;, &#39;CX&#39;, &#39;CY&#39;, &#39;CZ&#39;]</code></pre>
+<p>使用两个变量来生成list       dict的items()可以同时迭代key和value<br>    d = {‘x’: ‘A’, ‘y’: ‘B’, ‘z’: ‘C’ }<br>    &gt;&gt;&gt; for k, v in d.items():<br>    …     print(k, ‘=’, v)<br>    …<br>    y = B<br>    x = A<br>    z = C</p>
+<p>4.生成器（generator）<br>创建方法 </p>
+<pre><code>把一个列表生成式的[]改成()
+如果一个函数定义中包含yield关键字，那么这个函数就是一个generator
+例：
+def fib(max):
+n, a, b = 0, 0, 1
+  while n &lt; max:
+  yield b
+  a, b = b, a + b
+  n = n + 1
+  return &#39;done&#39;
+在每次调用next()的时候执行，遇到yield语句返回</code></pre>
+<hr>
+<p>5.迭代器  （ Iterator）<br>可以直接作用于for循环的对象统称为可迭代对象iterble(集合数据类型和生成器和带yield的generator function)</p>
+<p>使用isinstance()判断一个对象是否是Iterable对象</p>
+<p>可以被next()函数调用并不断返回下一个值的对象称为迭代器</p>
+<p>可以使用isinstance()判断一个对象是否是Iterator对象</p>
+<p>把iterable变成iterator使用iter()函数</p>
+<hr>
+<h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><p>一个函数就可以接收另一个函数作为参数，这种函数就称之为高阶函数。</p>
+<pre><code>def add(x, y, f):
+ return f(x) + f(y) 
+print(add(-5, 6, abs))         注：abs函数为内置绝对值
+结果:                               
+x = -5
+y = 6
+f = abs
+f(x) + f(y) ==&gt; abs(-5) + abs(6) ==&gt; 11
+return 11</code></pre>
+<hr>
+<p>1.map函数<br>map()函数接收两个参数，一个是函数，一个是Iterable，map将传入的函数依次作用到序列的每个元素，并把结果作为新的Iterator返回</p>
+<pre><code>&gt;&gt;&gt; def f(x):              
+...     return x * x
+...
+&gt;&gt;&gt; r = map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9])
+&gt;&gt;&gt; list(r)
+[1, 4, 9, 16, 25, 36, 49, 64, 81]</code></pre>
+<p>2.reduce函数<br>把一个函数作用在一个序列[x1, x2, x3, …]上，这个函数必须接收两个参数，reduce把结果继续和序列的下一个元素做累积计算</p>
+<pre><code>reduce(f, [x1, x2, x3, x4]) = f(f(f(x1, x2), x3), x4)
+把13579变成整数
+&gt;&gt;&gt; from functools import reduce
+&gt;&gt;&gt; def fn(x, y):
+...     return x * 10 + y
+...
+&gt;&gt;&gt; reduce(fn, [1, 3, 5, 7, 9])
+13579</code></pre>
+<p>3.filter函数<br>filter()函数用于过滤序列,和map()不同的是，filter()把传入的函数依次作用于每个元素，然后根据返回值是True还是False决定保留还是丢弃该元素<br>    删掉偶数<br>    def is_odd(n):<br>       return n % 2 == 1<br>    list(filter(is_odd, [1, 2, 4, 5, 6, 9, 10, 15]))</p>
+]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>学习资料</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客搭建</title>
+    <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><hr>
+<pre><code>node.js 
+.  下载网址： https://nodejs.org/zh-cn/  
+.  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
+<hr>
+<pre><code>git  
+.  下载网址： https://git-scm.com/downloads
+.  安装教程： 一路next直到安装完毕，保持默认的选项</code></pre>
+<hr>
+<pre><code>Visual  Studio code
+.  下载网址：https://code.visualstudio.com/
+.  安装教程：https://jingyan.baidu.com/article/fd8044fa0cc1115030137a4b.html</code></pre>
+<hr>
+<pre><code>安装加速软件源 
+.  第一步：win+r 输入 cmd
+.  第二步：输入 npm install -g cnpm --registry=https://registry.npm.taobao.org
+.  第三步：输入 cnpm install -g hexo </code></pre>
+<hr>
+<h3 id="二-初始化博客"><a href="#二-初始化博客" class="headerlink" title="二.初始化博客"></a>二.初始化博客</h3><hr>
+<pre><code>新建一个空白文件夹（名字随意，自己认识就好）</code></pre>
+<hr>
+<pre><code>打开文件夹搜索地址栏</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%90%9C%E7%B4%A2%E6%A0%8F.png" alt="搜索栏"></p>
+<hr>
+<pre><code>  在标记位置清空原有内容并输入cmd，然后回车</code></pre>
+<hr>
+<pre><code>输入命令（依次输入）
+    hexo init         # 初始化博客（过程较慢）
+    hexo generate     # 生成博客系统
+    hexo server      # 开启博客本地测试</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/cmd.png" alt="cmd"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E6%9C%AC%E5%9C%B0%E6%88%90%E5%8A%9F%E5%9B%BE%E7%89%87.png" alt="成功图片"></p>
+<hr>
+<pre><code>    运行成功会出上面第一张图的结果，接着打开浏览器输入 http://localhost:4000 查看自己的博客初始页面，到此就完成了本地搭建的过程。</code></pre>
+<hr>
+<h3 id="三-仓库和ssh"><a href="#三-仓库和ssh" class="headerlink" title="三.仓库和ssh"></a>三.仓库和ssh</h3><hr>
+<pre><code> 注册自己的github账号  网址：https://github.com/
+ 不会注册的自己搜索教程吧！</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gitbash.png" alt="gitbash"></p>
+<hr>
+<pre><code> 打开上图的软件（右击桌面）
+ 输入命令(依次输入)
+      git config --global user.email &quot;github注册时使用的邮箱&quot;
+      git config --global user.name &quot;github用的用户名&quot;
+      ssh-keygen -t rsa -C &quot;github注册时使用的邮箱&quot; # 这个命令会有好几个地方等待你输入，直接回车即可</code></pre>
+<hr>
+<pre><code> 打开文件夹，如下图</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/%E4%BD%8D%E7%BD%AE.png" alt="位置"></p>
+<hr>
+<pre><code> 打开文件夹中的 id_rsa.pub 文件(用 VScode 打开)
+ 复制文件中的所有内容</code></pre>
+<hr>
+<pre><code> 打开github，并按照下面步骤执行</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github1.png" alt="github1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/github2.png" alt="github2">  title随意</p>
+<hr>
+<pre><code> 测试是否成功
+ 输入命令
+      ssh -T git@github.com # 中途输入一次yes</code></pre>
+<hr>
+<p><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/git1.png" alt="git1">  出现即为成功</p>
+<hr>
+<pre><code> 打开github，点击左上角小猫回到首页
+ 点击创建仓库（create repository）
+ Repository name 输入格式 github用户名.github.io
+ 点击create repository</code></pre>
+<hr>
+<pre><code> 到此仓库和ssh就完成了</code></pre>
+<h3 id="四-配置文件修改"><a href="#四-配置文件修改" class="headerlink" title="四.配置文件修改"></a>四.配置文件修改</h3><hr>
+<pre><code> 打开你创建的文件夹，找到_config.yml文件，使用vscode或notepad++打开</code></pre>
+<hr>
+<p>修改文件中以下部分<br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai1.png" alt="gai1"><br><img src="/img/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/gai2.png" alt="gai2"></p>
+<hr>
+<h3 id="五-上传"><a href="#五-上传" class="headerlink" title="五.上传"></a>五.上传</h3><hr>
+<pre><code> 打开文件夹搜索地址栏，输入cmd
+ 输入命令（依次输入）
+      cnpm install hexo-deployer-git --save   # 安装自动上传到github的工具
+     hexo clean      # 清理缓存
+     hexo generate   # 生成博客网页
+     hexo deploy     # 部署网页到github上面</code></pre>
+<hr>
+<pre><code> 打开浏览器，输入网址 https://github用户名.github.io 即可打开自己博客</code></pre>
+<hr>
+<h3 id="六-美化"><a href="#六-美化" class="headerlink" title="六.美化"></a>六.美化</h3><hr>
+<pre><code> 网站推荐：https://hexo.io/themes/
+ 也可以自己寻找</code></pre>
+<hr>
+]]></content>
+      <categories>
+        <category>node</category>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>blog</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简介</title>
+    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
+      <categories>
+        <category>介绍</category>
+      </categories>
+      <tags>
+        <tag>自述</tag>
       </tags>
   </entry>
   <entry>
@@ -812,6 +844,141 @@ vim特有
 <p>13.awkward adj.笨拙的;尴尬的</p>
 <p>14.provided conj.假如</p>
 <p>15.timber n.木材</p>
+<p>16.torch n.手电筒;火炬</p>
+<p>17.oil n.油&amp;vt.给…加油 oilfield n.油田 oily adj.油滑的</p>
+<p>18.recall vt.回忆;召回</p>
+<p>19.compose vt.创作音乐;组成;使镇静 composer n.作曲家</p>
+<p>20.hay n.私料的草</p>
+<p>21.offshore adj.近海的</p>
+<p>22.slender adj.苗条的;微小的</p>
+<p>23.dumb adj.哑的</p>
+<p>24.chart n.图表</p>
+<p>25.botany n.植物学 botanical adj.植物学的</p>
+<p>26.laser n.激光</p>
+<p>27.startle vt.是惊吓</p>
+<p>28.powder n.粉末</p>
+<p>29.liquor n.烈性酒</p>
+<p>30.stream n.小河;溪流</p>
+<h3 id="day-ten"><a href="#day-ten" class="headerlink" title="day ten"></a>day ten</h3><p>1.silk n.丝绸</p>
+<p>2.widow n.寡妇</p>
+<p>3.invade vt.入侵 invasion n.入侵</p>
+<p>4.nourish vt.提供养分;培养</p>
+<p>5.remark v.说&amp;n.话语 remarkable adj.引人注意的</p>
+<p>6.segment n.部分;瓣</p>
+<p>7.steak n.牛排;鱼排</p>
+<p>8.widespread adj.普变的;分布广的</p>
+<p>9.helmet n.头盔</p>
+<p>10.perfume n.香水</p>
+<p>11.silly adj.傻的</p>
+<p>12.wood n.木材 wooden adj.木制的</p>
+<p>13.extraordinary adj.不平常的</p>
+<p>14.iceberg n.冰山</p>
+<p>15.limb n.肢腿</p>
+<p>16.saw n.锯开</p>
+<p>17.tabacco n.烟草</p>
+<p>18.mayor n.市长</p>
+<p>19.on show 展览 show off 炫耀 show sb around 带领某人参观</p>
+<p>20.witness n.证据;证人&amp;vt.目击</p>
+<p>21.rewind v.磁带回转</p>
+<p>22.ore n.矿石</p>
+<p>23.volt n.伏特 voltage n.电压</p>
+<p>24.eyesight n.视力</p>
+<p>25.beach n.沙滩</p>
+<p>26.cellar n.地窖</p>
+<p>27.deed n.行为 in deed 实际上</p>
+<p>28.neglect v.忽视</p>
+<p>29.spill v&amp;n.使溢出</p>
+<p>30.hut n.小屋</p>
+<h3 id="day-eleven"><a href="#day-eleven" class="headerlink" title="day eleven"></a>day eleven</h3><p>1.oak n.橡树&amp;adj.橡木的</p>
+<p>2.rid vt.摆脱 get rid of 摆脱</p>
+<p>3.withdraw vt.撤回</p>
+<p>4.swear v.宣誓;诅咒</p>
+<p>5.pierce v.刺穿</p>
+<p>6.mushroom n.蘑菇</p>
+<p>7.peak n.山峰&amp;adj.最高的</p>
+<p>8.rust n.铁锈&amp;v.使生锈</p>
+<p>9.breast n.胸部;乳房</p>
+<p>10.limp vi&amp;n.颇行</p>
+<p>11.oxygen n.氧气</p>
+<p>12.pepper n.胡椒粉</p>
+<p>13.tomb n.坟墓</p>
+<p>14.depict vt.描绘</p>
+<p>15.bedding n.寝具</p>
+<p>16.paw n.爪子&amp;vt.抓</p>
+<p>17.clue n.线索</p>
+<p>18.compensate v.补偿 compensation n.补偿物</p>
+<p>19.jungle n.热带丛林</p>
+<p>20.pursue vt.追赶;从事</p>
+<p>21.tournament n.比赛（联赛）</p>
+<p>22.undermine vt.暗中破坏;逐渐削弱</p>
+<p>23.unrest n.不安</p>
+<p>24.within prep.在…里面&amp;adv.在里面</p>
+<p>25.hobby n.嗜好</p>
+<p>26.bible n.圣经;权威的书</p>
+<p>27.fulfil v.履行</p>
+<p>28.mineral n.矿物质</p>
+<p>29.pale adj.苍白色</p>
+<p>30.sell out 卖完 sell off 廉价出售</p>
+<h3 id="day-twelve"><a href="#day-twelve" class="headerlink" title="day twelve"></a>day twelve</h3><p>1.withstand vt.经受</p>
+<p>2.reflect v.反射;思考 reflection n.映像;沉思</p>
+<p>3.betray vt.背叛;泄露</p>
+<p>4.hydrogen n.氢气</p>
+<p>5.ratio n.比率</p>
+<p>6.sell off 廉价出售 sell out 卖完</p>
+<p>7.therapy n.治疗</p>
+<p>8.release v.释放;发表</p>
+<p>9.limited adj.有限的 limitation n.局限性</p>
+<p>10.pleasant adj.令人愉悦的 pleasure n.高兴 pleased adj.高兴的<br> with pleasure 非常乐意 be pleased with 对…感到满意 be pleased to do 乐于做</p>
+<p>11.cocoa n.可可粉</p>
+<p>12.entire adj.全部的</p>
+<p>13.forum n.论坛</p>
+<p>14.dawn n.黎明</p>
+<p>15.rooster n.公鸡</p>
+<p>16.slice n.片&amp;v.切;割</p>
+<p>17.camel n.骆驼</p>
+<p>18.landlord n.地主;房东</p>
+<p>19.iron n.铁;熨斗&amp;v.熨烫</p>
+<p>20.eliminate vt.排除;淘汰</p>
+<p>21.mutton n.羊肉</p>
+<p>22.rebel vi.反叛&amp;n.叛乱者</p>
+<p>23.seemingly adv.表面的</p>
+<p>24.stripe n.条纹  strip v.脱去&amp;n.条</p>
+<p>25.wool n.羊毛 woollen adj.羊毛制的</p>
+<p>26.pregnant adj.怀孕的</p>
+<p>27.raw adj.生的;未加工的</p>
+<p>28.sweep vt.扫除&amp;n.打扫</p>
+<p>29.likely adj.很可能的 likewise adv.同样的；也</p>
+<p>30.pink adj.粉红色的</p>
+<h3 id="day-thirtheen"><a href="#day-thirtheen" class="headerlink" title="day thirtheen"></a>day thirtheen</h3><p>1.tackle vt.对付;阻截&amp;n.阻截;道具</p>
+<p>2.court n.法院;球场  courtroom n.法庭 courtyard n.庭院</p>
+<p>3.insure v.给…保险 insurance n.保险</p>
+<p>4.ocean n.海洋 Oceania n.大洋洲</p>
+<p>5.policy n.政策 policymaker n.决策者</p>
+<p>6.stag n.雄鹿</p>
+<p>7.toast n.烤面包;祝酒&amp;vt.烘烤;向…敬酒</p>
+<p>8.vanish vi.突然不见;绝迹</p>
+<p>9.client n.委托人</p>
+<p>10.plural adj.复数的&amp;n.复数</p>
+<p>11.sample n.标本</p>
+<p>12.souvenir n.纪念品</p>
+<p>13.work out 解决<br> worker n.工人 workforce n.劳动力 workman n.工匠 workmate n.同事 workshop n.车间;专题研讨会</p>
+<p>14.fool sb into doing sth 愚弄某人做某事</p>
+<p>15.charm n.魅力;咒语&amp;vt.吸引</p>
+<p>16.affair n.事情</p>
+<p>17.prove vt.证明</p>
+<p>18.reinforce vt.增援</p>
+<p>19.swell v.肿胀;扩大</p>
+<p>20.token n.筹码;礼券</p>
+<p>21.tutor n.导师;家庭教师</p>
+<p>22.village n.村庄 village n.村民</p>
+<p>23.wipe vt.擦 wipe…away 擦掉</p>
+<p>24.item n.条款;一则新闻</p>
+<p>25.spare no pains 全力以赴 take pains 尽力</p>
+<p>26.reform v&amp;n.改革</p>
+<p>27.sorrow n.悲伤</p>
+<p>28.copper n.铜币</p>
+<p>29.deduct vt.扣除;演绎</p>
+<p>30.contest n.竞赛&amp;vt.争辩 contestant n.竞争者</p>
 ]]></content>
       <categories>
         <category>English</category>
