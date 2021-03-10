@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>简介</title>
+    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
+    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
+      <categories>
+        <category>介绍</category>
+      </categories>
+      <tags>
+        <tag>自述</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客搭建</title>
     <url>/2020/12/20/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h6 id="绕过江山错落，才发现你是人间星火。"><a href="#绕过江山错落，才发现你是人间星火。" class="headerlink" title="绕过江山错落，才发现你是人间星火。"></a>绕过江山错落，才发现你是人间星火。</h6><h3 id="一-准备工具"><a href="#一-准备工具" class="headerlink" title="一.准备工具"></a>一.准备工具</h3><hr>
@@ -103,14 +114,48 @@
       </tags>
   </entry>
   <entry>
-    <title>简介</title>
-    <url>/2020/12/27/%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<h3 id="自己学习的网站-更新中"><a href="#自己学习的网站-更新中" class="headerlink" title="自己学习的网站(更新中)"></a>自己学习的网站(更新中)</h3><h4 id="凛冬散尽，星河长明。"><a href="#凛冬散尽，星河长明。" class="headerlink" title="凛冬散尽，星河长明。"></a>凛冬散尽，星河长明。</h4>]]></content>
-      <categories>
-        <category>介绍</category>
-      </categories>
-      <tags>
-        <tag>自述</tag>
-      </tags>
+    <title></title>
+    <url>/2021/03/10/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>title: 挖矿教程<br>date: 2020-12-29 8:28:01<br>categories:<br>    - 赚钱<br>tags:<br>    - 小知识<br>mp3: /music/if.mp3<br>cover: /img/挖矿教程/四.jpg</p>
+<h6 id="眼泪，有时候是一种无法言说的幸福。微笑，有时候是一种没有说出口的伤痛。"><a href="#眼泪，有时候是一种无法言说的幸福。微笑，有时候是一种没有说出口的伤痛。" class="headerlink" title="眼泪，有时候是一种无法言说的幸福。微笑，有时候是一种没有说出口的伤痛。"></a>眼泪，有时候是一种无法言说的幸福。微笑，有时候是一种没有说出口的伤痛。</h6><h3 id="一-前导"><a href="#一-前导" class="headerlink" title="一.前导"></a>一.前导</h3><p>1.什么是挖矿<br>    挖矿是参与维护比特币网络的节点，通过协助生成新区块来获取一定量新增的比特币</p>
+<hr>
+<p>2.比特币历史<br>    2008年11月1日，中本聪发表《比特币:一种点对点的电子现金系统》，阐述了基于P2P网络技术、加密技术、时间戳技术、区块链技术等的电子现金系统的构架理念，这标志着比特币的诞生。<br>    两个月后理论步入实践，2009年1月3日第一个序号为0的创世区块诞生。<br>    2009年1月9日出现序号为1的区块，并与序号为0的创世区块相连接形成了链，标志着区块链的诞生。</p>
+<hr>
+<p>3.什么是区块链<br>    它是一个共享数据库，存储于其中的数据或信息，具有“不可伪造”“全程留痕”“可以追溯”“公开透明”“集体维护”等特征</p>
+<hr>
+<p>4.挖矿的前提<br>    一台电脑<br>    显卡的显存要4GB及以上<br>    网络连接稳定</p>
+<hr>
+<h3 id="二-挖矿步骤"><a href="#二-挖矿步骤" class="headerlink" title="二.挖矿步骤"></a>二.挖矿步骤</h3><p>1.平台<br>    挖矿有很多平台,我这里用nicehash<br>    因为这个平台比较久了,所以靠谱一点<br>    平台网址:<a href="https://www.nicehash.com/">https://www.nicehash.com</a>  注:可能需要科学上网</p>
+<hr>
+<p>2.注册及介绍<br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%B8%80%E6%AD%A5.png" alt="第一步"></p>
+<hr>
+<p><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%BA%8C%E6%AD%A5.png" alt="第二步"></p>
+<hr>
+<p><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%B8%89%E6%AD%A5.png" alt="第三步"></p>
+<hr>
+<p><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E5%9B%9B%E6%AD%A5.png" alt="第四步"></p>
+<hr>
+<p>开始注册<br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%BA%94%E6%AD%A5.png" alt="第五步"><br>下载挖矿软件<br>    地址:<a href="https://github.com/nicehash/NiceHashMiner/releases/tag/3.0.5.6">https://github.com/nicehash/NiceHashMiner/releases/tag/3.0.5.6</a></p>
+<hr>
+<p><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E5%85%AD%E6%AD%A5.png" alt="第六步"><br>安装<br>    默认为系统盘改不了<br>    如果防火墙报错请关掉或允许此软件在电脑上运行</p>
+<hr>
+<p>钱包地址<br>    地址:<a href="https://www.nicehash.com/my/wallets/">https://www.nicehash.com/my/wallets/</a><br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%B8%83%E6%AD%A5.png" alt="第七步"><br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E5%85%AB%E6%AD%A5.png" alt="第八步"><br>复制得到的地址，打开软件<br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E4%B9%9D%E6%AD%A5.png" alt="第九步"><br>跟着图片改<br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E5%8D%81%E6%AD%A5.png" alt="第十步"><br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/%E7%AC%AC%E5%8D%81%E4%B8%80%E6%AD%A5.png" alt="第十一步"></p>
+<hr>
+<p>开始挖矿<br>    CPU基本没什么算力直接关掉<br>    等待运算一段时间选择最高的算力插件，其余的全部关掉<br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/1.jpg" alt="1"><br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/2.jpg" alt="2"><br>出现cmd弹窗即开始挖矿<br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/3.jpg" alt="3"></p>
+<hr>
+<h3 id="三-提现"><a href="#三-提现" class="headerlink" title="三.提现"></a>三.提现</h3><p>1.认证<br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/4.jpg" alt="4"><br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/5.png" alt="5"><br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/6.png" alt="6"><br>在手机上的google play里面下载Authenticator App（认证软件），然后用这个软件扫描二维码<br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/7.png" alt="7"><br><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/8.png" alt="8"><br>2.提现平台<br>    我们这里用火币 网址:<a href="https://www.huobi.be/zh-cn/">https://www.huobi.be/zh-cn/</a></p>
+<hr>
+<pre><code>接着注册账号
+注册好以后点击右上角的资产  币币账户</code></pre>
+<hr>
+<p><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/9.jpg" alt="9"><br>    复制得到的地址，粘贴到下图位置</p>
+<hr>
+<p><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/10.png" alt="10"><br>    地址名称填火币，方便记忆<br>    接着验证就可以提现到火币了（至少0.001个btc才能提现）</p>
+<hr>
+<pre><code>回到火币，点击左上角买币
+选择出售
+然后直接打字你的比特币值多少人民币就可以了，然后选择一个出价最高的进行出售</code></pre>
+<p><img src="/img/%E6%8C%96%E7%9F%BF%E6%95%99%E7%A8%8B/11.png" alt="11"><br>    出售的过程中需要认证你自己的收款方式</p>
+<h4 id="完"><a href="#完" class="headerlink" title="完"></a>完</h4>]]></content>
   </entry>
 </search>
