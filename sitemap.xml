@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xczf.shop/2022/07/15/zabbix/</loc>
+    
+    <lastmod>2023-12-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/2022/08/01/Python-%E9%AB%98%E7%BA%A7/</loc>
+    
+    <lastmod>2023-12-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xczf.shop/2021/04/01/Docker/</loc>
     
     <lastmod>2023-12-24</lastmod>
@@ -21,15 +39,6 @@
   
   <url>
     <loc>http://xczf.shop/2023/10/01/DevOps/</loc>
-    
-    <lastmod>2023-12-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xczf.shop/2022/08/01/Python-%E9%AB%98%E7%BA%A7/</loc>
     
     <lastmod>2023-12-24</lastmod>
     
@@ -263,13 +272,6 @@
 
   
   <url>
-    <loc>http://xczf.shop/tags/C/</loc>
-    <lastmod>2023-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://xczf.shop/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2023-12-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -278,6 +280,13 @@
   
   <url>
     <loc>http://xczf.shop/tags/Linux/</loc>
+    <lastmod>2023-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/tags/C/</loc>
     <lastmod>2023-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -307,13 +316,6 @@
 
   
   <url>
-    <loc>http://xczf.shop/cate%EF%BC%9Agories/C/</loc>
-    <lastmod>2023-12-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://xczf.shop/cate%EF%BC%9Agories/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2023-12-24</lastmod>
     <changefreq>weekly</changefreq>
@@ -322,6 +324,13 @@
   
   <url>
     <loc>http://xczf.shop/cate%EF%BC%9Agories/Linux/</loc>
+    <lastmod>2023-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/cate%EF%BC%9Agories/C/</loc>
     <lastmod>2023-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
