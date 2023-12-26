@@ -2,25 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xczf.shop/2021/04/15/KVM/</loc>
+    
+    <lastmod>2023-12-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/2021/07/15/python-%E7%88%AC%E8%99%AB/</loc>
+    
+    <lastmod>2023-12-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/2022/08/01/Python-%E9%AB%98%E7%BA%A7/</loc>
+    
+    <lastmod>2023-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/2020/05/15/rsync/</loc>
+    
+    <lastmod>2023-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xczf.shop/2022/11/01/%E5%88%86%E5%B8%83%E5%BC%8F%E5%AD%98%E5%82%A8/</loc>
-    
-    <lastmod>2023-12-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xczf.shop/2022/07/15/zabbix/</loc>
-    
-    <lastmod>2023-12-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xczf.shop/2022/10/01/V2ray/</loc>
     
     <lastmod>2023-12-25</lastmod>
     
@@ -56,6 +74,33 @@
   </url>
   
   <url>
+    <loc>http://xczf.shop/2021/01/31/linux%E7%BD%91%E7%BB%9CIO%E6%A8%A1%E5%9E%8B/</loc>
+    
+    <lastmod>2023-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/2020/09/15/linux%E5%9F%BA%E7%A1%80/</loc>
+    
+    <lastmod>2023-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/2021/04/01/Docker/</loc>
+    
+    <lastmod>2023-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xczf.shop/2021/02/03/nginx/</loc>
     
     <lastmod>2023-12-25</lastmod>
@@ -74,7 +119,16 @@
   </url>
   
   <url>
-    <loc>http://xczf.shop/2021/01/31/linux%E7%BD%91%E7%BB%9CIO%E6%A8%A1%E5%9E%8B/</loc>
+    <loc>http://xczf.shop/2022/10/01/V2ray/</loc>
+    
+    <lastmod>2023-12-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/2022/07/15/zabbix/</loc>
     
     <lastmod>2023-12-25</lastmod>
     
@@ -84,24 +138,6 @@
   
   <url>
     <loc>http://xczf.shop/2023/10/01/DevOps/</loc>
-    
-    <lastmod>2023-12-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xczf.shop/2022/08/01/Python-%E9%AB%98%E7%BA%A7/</loc>
-    
-    <lastmod>2023-12-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xczf.shop/2021/04/01/Docker/</loc>
     
     <lastmod>2023-12-24</lastmod>
     
@@ -149,24 +185,6 @@
     <loc>http://xczf.shop/2022/07/01/MongoDB/</loc>
     
     <lastmod>2023-12-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xczf.shop/2020/09/15/linux%E5%9F%BA%E7%A1%80/</loc>
-    
-    <lastmod>2023-12-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xczf.shop/2021/07/15/python-%E7%88%AC%E8%99%AB/</loc>
-    
-    <lastmod>2023-12-19</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -265,50 +283,71 @@
 
   <url>
     <loc>http://xczf.shop/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://xczf.shop/tags/Linux/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <loc>http://xczf.shop/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xczf.shop/tags/C/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xczf.shop/tags/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <loc>http://xczf.shop/tags/linux/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/tags/Linux/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/tags/web%E6%9C%8D%E5%8A%A1/</loc>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xczf.shop/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xczf.shop/tags/python/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xczf.shop/tags/windows/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/tags/%E7%9B%91%E6%8E%A7/</loc>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -316,43 +355,64 @@
 
   
   <url>
-    <loc>http://xczf.shop/cate%EF%BC%9Agories/Linux/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <loc>http://xczf.shop/cate%EF%BC%9Agories/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xczf.shop/cate%EF%BC%9Agories/C/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://xczf.shop/cate%EF%BC%9Agories/%E7%BD%91%E7%BB%9C/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <loc>http://xczf.shop/cate%EF%BC%9Agories/linux/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/cate%EF%BC%9Agories/Linux/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/cate%EF%BC%9Agories/web%E6%9C%8D%E5%8A%A1/</loc>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xczf.shop/cate%EF%BC%9Agories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xczf.shop/cate%EF%BC%9Agories/python/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://xczf.shop/cate%EF%BC%9Agories/windows/</loc>
-    <lastmod>2023-12-25</lastmod>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://xczf.shop/cate%EF%BC%9Agories/%E7%9B%91%E6%8E%A7/</loc>
+    <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
