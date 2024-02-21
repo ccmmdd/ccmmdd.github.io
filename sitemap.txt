@@ -1,12 +1,12 @@
-http://xczf.shop/2022/07/15/python-Django/
+http://xczf.shop/2023/10/01/DevOps/
 http://xczf.shop/2022/04/01/kubernets/
+http://xczf.shop/2022/07/15/python-Django/
 http://xczf.shop/2021/04/01/Docker/
 http://xczf.shop/2023/05/01/python-flask/
 http://xczf.shop/2021/02/03/nginx/
 http://xczf.shop/2022/10/01/V2ray/
 http://xczf.shop/2023/08/01/python-PyQt/
 http://xczf.shop/2021/02/03/Apache/
-http://xczf.shop/2023/10/01/DevOps/
 http://xczf.shop/2021/02/05/%E8%BF%9C%E7%A8%8B%E7%AE%A1%E7%90%86-FTP-NFS/
 http://xczf.shop/2021/07/15/python-%E7%88%AC%E8%99%AB/
 http://xczf.shop/2022/03/15/prometheus/
@@ -39,7 +39,6 @@ http://xczf.shop/
 http://xczf.shop/tags/%E7%BD%91%E7%BB%9C/
 http://xczf.shop/tags/web%E6%9C%8D%E5%8A%A1/
 http://xczf.shop/tags/linux/
-http://xczf.shop/tags/Linux/
 http://xczf.shop/tags/C/
 http://xczf.shop/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/
 http://xczf.shop/tags/%E7%9B%91%E6%8E%A7/
@@ -48,7 +47,6 @@ http://xczf.shop/tags/windows/
 http://xczf.shop/cate%EF%BC%9Agories/%E7%BD%91%E7%BB%9C/
 http://xczf.shop/cate%EF%BC%9Agories/web%E6%9C%8D%E5%8A%A1/
 http://xczf.shop/cate%EF%BC%9Agories/linux/
-http://xczf.shop/cate%EF%BC%9Agories/Linux/
 http://xczf.shop/cate%EF%BC%9Agories/C/
 http://xczf.shop/cate%EF%BC%9Agories/%E6%95%B0%E6%8D%AE%E5%BA%93/
 http://xczf.shop/cate%EF%BC%9Agories/%E7%9B%91%E6%8E%A7/
