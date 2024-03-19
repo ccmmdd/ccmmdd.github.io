@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://xczf.shop/2023/08/15/python-%E8%BF%9B%E9%98%B6/</loc>
+    
+    <lastmod>2024-03-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://xczf.shop/2023/10/01/DevOps/</loc>
     
     <lastmod>2024-02-21</lastmod>
@@ -104,15 +113,6 @@
     <loc>http://xczf.shop/2022/03/15/prometheus/</loc>
     
     <lastmod>2023-12-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://xczf.shop/2022/08/01/python-%E9%AB%98%E7%BA%A7/</loc>
-    
-    <lastmod>2023-12-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
